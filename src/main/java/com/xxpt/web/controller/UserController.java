@@ -1,8 +1,8 @@
 package com.xxpt.web.controller;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -12,16 +12,8 @@ import com.xxpt.service.IUserService;
 @Controller
 public class UserController {
 
-	@Autowired
+	@Resource
 	IUserService userService;
-
-	@RequestMapping("/add")
-	public String addUser(String username, String password) {
-		System.out.println("123");
-		userService.findAll();
-		userService.addUser(username, password);
-		return "list";
-	}
 
 	@RequestMapping("/userLogin")
 	public String userLogin(User user, HttpSession session) {

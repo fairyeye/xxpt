@@ -1,6 +1,7 @@
 package com.xxpt.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
 import com.xxpt.bean.Student;
@@ -11,9 +12,9 @@ import com.xxpt.service.IUserService;
 @Service
 public class UserServiceImpl implements IUserService{
 	
-	@Autowired
+	@Resource
 	UserMapper userMapper;
-	@Autowired
+	@Resource
 	StudentMapper studentMapper;
 
 	@Override
