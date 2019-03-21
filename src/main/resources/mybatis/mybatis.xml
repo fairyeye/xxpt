@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置: setting;别名 -->
+	<settings>
+		<!--指定mybatis默认的日志实现，这里选用标准输出，可以打印出执行过程的sql语句，详细信息查看mybatis官网中setting设置一节 -->
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+		<!-- 延迟加载 默认false -->
+		<setting name="lazyLoadingEnabled" value="true" />
+		<!-- 积极加载 默认true -->
+		<setting name="aggressiveLazyLoading" value="false" />
+		<!--开启缓存 -->
+		<setting name="cacheEnabled" value="true" />
+
+	</settings>
+	<typeAliases>
+		<package name="com.xxpt.bean" />
+	</typeAliases>
+
+</configuration>
