@@ -19,7 +19,7 @@ public class UserServiceImpl implements IUserService{
 
 	@Override
 	public void addUser(String username, String password) {
-		System.out.println("123");
+		
 	}
 
 	@Override
