@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    	<!-- spring和mybatis整合 
+    	1.配置数据源 
+    	2.构建SqlSessionFactory对象 
+    	3.扫描dao包，创建dao层对象 -->
+	<context:property-placeholder location="classpath:mybatis/jdbc.properties" />
+	<bean name="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.drive}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+	<!-- 2.构建sqlSessionFactory对象 -->
+	<bean class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 加载mybatis核心配置文件 -->
+		<property name="configLocation" value="classpath:mybatis/mybatis.xml"></property>
+		<!-- 加载数据源 -->
+		<property name="dataSource" ref="dataSource"></property>
+ 
+	</bean>
+	<!-- 3.构建mapper接口文件所对应的实现类(代理类)的对象 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 扫描mapper包，加载映射文件。mybatis根据映射文件和接口生成代理类，构建代理类对象 -->
+		<property name="basePackage" value="com.xxpt.dao"></property>
+
+	</bean>
+    
+</beans>
