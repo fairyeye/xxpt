@@ -82,18 +82,83 @@
 						</div></li>
 				</ul>
 				<ul class="navbar-nav">
-                        <li class="nav-item">
-                        		<a class="nav-link d-block" href="login">
-                        		<b>游客，请登录！</b></br>
-                            </a>
-                        </li>
+					<li class="nav-item">
+						<a class="nav-link d-block" href="login">
+							<c:if test="${sessionScope.user.uId eq 0}">
+								<b>您好，管理员！</b></br>
+							</c:if>
+							<c:if test="${sessionScope.user.uLevel eq 1}">
+								<b>您好，教师${sessionScope.user.uId }！</b></br>
+							</c:if>
+							<c:if test="${sessionScope.user.uLevel eq 2}">
+								<b>您好，学生${sessionScope.user.uId }！</b></br>
+							</c:if>
+							<c:if test="${sessionScope.user.uId eq  null}">
+								<b>您好，请登录！</b></br>
+							</c:if>
+						</a>
+					</li>
+				</ul>
              </ul>
 			</div>
 		</div>
 		</nav>
-		
-		<div>
-			个人信息
+
+<div class="container mt-5">
+	<!-- row -->
+	<div class="row tm-content-row">
+		<div class="tm-block-col tm-col-avatar">
+			<div class="tm-bg-primary-dark tm-block tm-block-avatar">
+				<h2 class="tm-block-title"> </h2>
+				<div class="tm-avatar-container">
+					<img src="img/admin.jpg" alt="Avatar" class="tm-avatar img-fluid mb-4" />
+				</div>
+			</div>
 		</div>
+		<div class="tm-block-col tm-col-account-settings">
+			<div class="tm-bg-primary-dark tm-block tm-block-settings">
+				<h2 class="tm-block-title">个人信息</h2>
+				<form action="infoUpdate" class="tm-signup-form row">
+					<div class="form-group col-lg-6">
+						<label for="name">学号/编号</label>
+						<input id="uId" name="uId" type="text" readonly="readonly" class="form-control validate" value=${sessionScope.user.uId } />
+					</div>
+					<div class="form-group col-lg-6">
+						<label for="name">姓名</label>
+						<input id="email" name="name" type="text" class="form-control validate" />
+					</div>
+					<div class="form-group col-lg-6">
+						<label for="password">密码</label>
+						<input id="password" name="password" type="password" readonly="readonly" class="form-control validate" value=${sessionScope.user.uPassword } />
+					</div>
+					<div class="form-group col-lg-6">
+						<label for="name">性别</label>
+						<input id="sex" name="sex" type="text" class="form-control validate" value=${sessionScope.user.uId } />
+					</div>
+					<div class="form-group col-lg-6">
+						<label for="phone">学院</label>
+						<input id="phone" name="phone" type="tel" class="form-control validate" />
+					</div>
+					<div class="form-group col-lg-6">
+						<label for="name">入学年份</label>
+						<input id="date" name="date" type="text" class="form-control validate" value=${sessionScope.user.uId } />
+					</div>
+
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary btn-block text-uppercase" >
+							修改个人信息
+						</button>
+					</div>
+					<label for="name"> &nbsp;&nbsp;</label>
+					<div class="col-12">
+						<button type="reset" onclick="window.location.href='updatePassword'" class="btn btn-primary btn-block text-uppercase" >
+							修改密码
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>

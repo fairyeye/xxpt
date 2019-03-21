@@ -1,8 +1,8 @@
 package com.xxpt.web.controller;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -12,7 +12,7 @@ import com.xxpt.service.IUserService;
 @Controller
 public class UserController {
 
-	@Autowired
+	@Resource
 	IUserService userService;
 
 	@RequestMapping("/add")

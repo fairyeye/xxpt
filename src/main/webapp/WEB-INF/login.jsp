@@ -31,7 +31,7 @@
 	<div>
 		<nav class="navbar navbar-expand-xl">
 		<div class="container h-100">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="index">
 				<h1 class="tm-site-title mb-0">大学生学习平台</h1>
 			</a>
 			<button class="navbar-toggler ml-auto mr-0" type="button"
@@ -68,10 +68,6 @@
 										type="password" class="form-control validate" id="uPassword"
 										value="" required />
 								</div>
-								<!-- <div class="form-group mt-4" align="center">
-									<label><input name="identity"  type="radio" checked="checked" />学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-									<label><input name="identity"  type="radio" />教师</label>
-								</div> -->
 								<div class="form-group mt-4">
 									<button type="submit"
 										class="btn btn-primary btn-block text-uppercase">

@@ -6,10 +6,13 @@ import org.springframework.stereotype.Service;
 import com.xxpt.bean.User;
 import com.xxpt.dao.UserMapper;
 import com.xxpt.service.IUserService;
+
+import javax.annotation.Resource;
+
 @Service
 public class UserServiceImpl implements IUserService{
 	
-	@Autowired
+	@Resource
 	UserMapper userMapper;
 
 	public void addUser(String username, String password) {
