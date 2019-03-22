@@ -29,17 +29,6 @@
         <a class="navbar-brand" href="index">
             <h1 class="tm-site-title mb-0">大学生学习平台</h1>
         </a>
-        <button
-                class="navbar-toggler ml-auto mr-0"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <i class="fas fa-bars tm-nav-icon"></i>
-        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto h-100">
@@ -50,28 +39,24 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a
-                            class="nav-link dropdown-toggle"
-                            href="teacher"
-                            id="navbarDropdown"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                    >
+                    <a class="nav-link dropdown-toggle" href="teacher" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="far fa-file-alt"></i>
                         <span> 教师管理 <i class="fas fa-angle-down"></i> </span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Daily Report</a>
-                        <a class="dropdown-item" href="#">Weekly Report</a>
-                        <a class="dropdown-item" href="#">Yearly Report</a>
+                        <a class="dropdown-item" href="login">注销登录</a>
+                        <a class="dropdown-item" href="info">个人信息</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="student">
-                        <i class="fas fa-shopping-cart"></i> 学生管理
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="student" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-file-alt"></i>
+                        <span> 学生管理 <i class="fas fa-angle-down"></i> </span>
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="login">注销登录</a>
+                        <a class="dropdown-item" href="info">个人信息</a>
+                    </div>
                 </li>
 
                 <li class="nav-item">
@@ -80,15 +65,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a
-                            class="nav-link dropdown-toggle"
-                            href="info"
-                            id="navbarDropdown"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                    >
+                    <a class="nav-link dropdown-toggle" href="info" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="far fa-user"></i>
                         <span> 个人信息 <i class="fas fa-angle-down"></i> </span>
                     </a>
@@ -110,7 +87,7 @@
                         <c:if test="${sessionScope.user.uLevel eq 2}">
                             <b>您好，学生${sessionScope.user.uId }！</b></br>
                         </c:if>
-                        <c:if test="${sessionScope.user.uId eq  null}">
+                        <c:if test="${sessionScope.user.uId eq null}">
                             <b>您好，请登录！</b></br>
                         </c:if>
                     </a>
