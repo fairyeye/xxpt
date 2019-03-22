@@ -4,6 +4,7 @@
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <base href="<%=basePath %>" />
@@ -122,10 +123,10 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col-12">
-                        <form action="userLogin" method="post" class="tm-login-form">
+                        <form action="userUpdatePassword" method="post" class="tm-login-form">
                             <div class="form-group">
-                                <label for="username">账号</label> <input name="uId"
-                                                                        type="text" class="form-control validate" id="uId" value=""
+                                <label for="username">账号</label> <input name="uId" readonly="readonly"
+                                                                        type="text" class="form-control validate" id="uId" value=${sessionScope.user.uId}
                                                                         required />
                             </div>
                             <div class="form-group mt-3">

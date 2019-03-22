@@ -1,7 +1,5 @@
-<%@page import="com.xxpt.bean.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.xxpt.bean.User" %>
     <%String path=request.getContextPath()+"/"; %>
     <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -11,11 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-    <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/fontawesome.min.css">
-    <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
-    <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/templatemo-style.css">
     
 </head>
@@ -119,12 +114,6 @@
         </div>
       </nav>
         <div class="container">
-           <!--  <div class="row">
-                <div class="col">
-                    <p class="text-white mt-5 mb-5">Welcome back, <b>Admin</b></p>
-                </div>
-            </div> -->
-            <!-- row -->
             <div class="row tm-content-row">
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                 </div>
@@ -148,84 +137,23 @@
                                     <td>
                                     	《学习平台开通》
                                     </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr><tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr><tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr><tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
+                                    <td colspan="4"><b><a href="noticeinfo" style="color: #bee5eb">楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</a></b></td>
                                     <td>08:00, 18 NOV 2018</td>
                                 </tr>
                                 <tr align="center">
                                     <th scope="row"><b>管理员</b></th>
                                     <td>
-                                    	《学习平台开通》
+                                        《学习平台开通》
                                     </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
+                                    <td colspan="4"><b><a href="noticeinfo" style="color: #bee5eb">楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</a></b></td>
                                     <td>08:00, 18 NOV 2018</td>
                                 </tr>
                                 <tr align="center">
                                     <th scope="row"><b>管理员</b></th>
                                     <td>
-                                    	《学习平台开通》
+                                        《学习平台开通》
                                     </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr>
-                                <tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr>
-                                <tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr>
-                                <tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr>
-                                <tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
-                                    <td>08:00, 18 NOV 2018</td>
-                                </tr>
-                                <tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
-                                    <td colspan="4"><b>楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</b></td>
+                                    <td colspan="4"><b><a href="noticeinfo" style="color: #bee5eb">楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</a></b></td>
                                     <td>08:00, 18 NOV 2018</td>
                                 </tr>
                             </tbody>

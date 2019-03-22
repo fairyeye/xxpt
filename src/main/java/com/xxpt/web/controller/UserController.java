@@ -27,7 +27,7 @@ public class UserController {
 					return "forward:/index";
 				} else {
 					session.setAttribute("msg", "请输入正确的管理员密码");
-					return "redirect:/login";
+					return "login";
 				}
 			} else {
 				st_user = userService.login(user.getuId(), user.getuPassword());
