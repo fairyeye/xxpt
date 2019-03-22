@@ -110,7 +110,7 @@
           <div class="tm-bg-primary-dark tm-block tm-block-products">
           <h2 class="tm-block-title">教师信息</h2>
             <div class="tm-product-table-container">
-              <table class="table table-hover tm-table-small tm-product-table">
+              <table class="table table-hover tm-table-small tm-product-table" >
                 <thead>
                   <tr>
                     <th scope="col">&nbsp;</th>
@@ -130,7 +130,7 @@
                     <td>陈平安</td>
                     <td>2015/03/03</td>
                     <td>
-                      <a href="#" class="tm-product-delete-link">
+                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
                       </a>
                     </td>
@@ -142,86 +142,13 @@
                     <td>张三丰</td>
                     <td>2019/03/03</td>
                     <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
+                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
                       </a>
                     </td>
                   </tr>
                   
                 </tbody>
-
-
-
-
-
-
 
               </table>
             </div>
@@ -249,7 +176,7 @@
                     <td class="tm-product-name">计算机通信学院</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
                       </a>
                     </td>
                   </tr>
@@ -257,7 +184,7 @@
                     <td class="tm-product-name">软件学院</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
                       </a>
                     </td>
                   </tr>
@@ -265,7 +192,7 @@
                     <td class="tm-product-name">物理学院</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
                       </a>
                     </td>
                   </tr>
@@ -273,7 +200,7 @@
                     <td class="tm-product-name">数学学院</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
                       </a>
                     </td>
                   </tr>
@@ -281,7 +208,7 @@
                     <td class="tm-product-name">烟草学院</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
                       </a>
                     </td>
                   </tr>
@@ -308,12 +235,20 @@
     <!-- https://jquery.com/download/ -->
     <script src="js/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
-    <script>
+    <script language="JavaScript">
       $(function() {
         $(".tm-product-name").on("click", function() {
           window.location.href = "edit-product.html";
         });
       });
+      function delete_sure() {
+          var sure = confirm("确定删除？");
+          if (sure == true){
+              return true;
+          } else{
+              return false;
+          }
+      }
     </script>
   </body>
 </html>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/fontawesome.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/templatemo-style.css">
-    
+
 </head>
 
 <body id="reportsPage">
-	
+
     <div class="" id="home">
         <nav class="navbar navbar-expand-xl">
         <div class="container h-100">

@@ -123,7 +123,7 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col-12">
-                        <form action="userUpdatePassword" method="post" class="tm-login-form">
+                        <form action="userUpdatePassword" method="post" class="tm-login-form" onsubmit="return sumbit_sure()">
                             <div class="form-group">
                                 <label for="username">账号</label> <input name="uId" readonly="readonly"
                                                                         type="text" class="form-control validate" id="uId" value=${sessionScope.user.uId}
@@ -132,11 +132,11 @@
                             <div class="form-group mt-3">
                                 <label for="password">密码</label> <input name="uPassword"
                                                                         type="password" class="form-control validate" id="uPassword"
-                                                                        value="" required />
+                                                                        value=""  />
                             </div>
                             <div class="form-group mt-4">
                                 <button type="submit"
-                                        class="btn btn-primary btn-block text-uppercase">
+                                        class="btn btn-primary btn-block text-uppercase" >
                                     修改密码 </button>
                             </div>
                             <button type="reset" onclick="window.location.href='index'" class="mt-5 btn btn-primary btn-block text-uppercase">
@@ -148,16 +148,19 @@
         </div>
     </div>
 </div>
-<footer class="tm-footer row tm-mt-small">
-    <div class="col-12 font-weight-light">
-        <p class="text-center text-white mb-0 px-4 small">
-            Copyright &copy; Company name All rights reserved.<a target="_blank"></a>
-        </p>
-    </div>
-</footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <!-- https://jquery.com/download/ -->
 <script src="js/bootstrap.min.js"></script>
 <!-- https://getbootstrap.com/ -->
+<script language="JavaScript">
+    function sumbit_sure() {
+        var sure = confirm("确定修改密码？");
+        if (sure == true) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+</script>
 </body>
 </html>

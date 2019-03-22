@@ -117,6 +117,11 @@
             </exclusions>
         </dependency>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8a89685742581ff466bc0aec4d2ac973d2a03b4e
 	</dependencies>
 	<build>
 		<finalName>XXPT3.0</finalName>

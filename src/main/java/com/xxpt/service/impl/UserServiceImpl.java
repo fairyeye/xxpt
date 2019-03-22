@@ -18,7 +18,7 @@ public class UserServiceImpl implements IUserService{
 	StudentMapper studentMapper;
 
 	public void addUser(String username, String password) {
-		
+
 	}
 
 	public User findAll() {
