@@ -15,13 +15,6 @@ public class UserController {
 	@Resource
 	IUserService userService;
 
-	@RequestMapping("/add")
-	public String addUser(String username, String password) {
-		userService.findAll();
-		userService.addUser(username, password);
-		return "list";
-	}
-
 	@RequestMapping("/userLogin")
 	public String userLogin(User user, HttpSession session) {
 		System.out.println("用户" + user + "尝试登录！！");
@@ -42,6 +35,7 @@ public class UserController {
 				return "index";
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 			session.setAttribute("msg", e.getMessage());
 			return "login";
 		}
@@ -50,14 +44,22 @@ public class UserController {
 	public String userRegister(User user,HttpSession session){
 		try {
 			System.out.println("用户" + user + "尝试注册！！");
-			userService.register(user);
+			int i = userService.registerValidate(user);
+			if(i==0){
+				userService.register(user);                                                           
+			}else if(i==2){
+				session.setAttribute("msg", "请联系您的教师开通账户，谢谢！");
+				return "register";
+			}else if(i==1){
+				session.setAttribute("msg", "请联系您的领导开通账户，谢谢！");
+				return "register";
+			}
 			session.setAttribute("msg", "注册成功！");
 			return "login";
 		} catch (Exception e) {
 			session.setAttribute("msg", "注册失败！");
 			return "register";
 		}
-		
 	}
 }
 

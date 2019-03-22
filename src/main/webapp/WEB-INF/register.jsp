@@ -63,24 +63,23 @@
 						<div class="col-12">
 							<form action="userRegister" method="post" class="tm-login-form">
 								<div class="form-group">
-									<label for="username">学号/编号</label> <input name="uId"
-										type="text" class="form-control validate" id="uId" value=""
-										required />
+									<label for="username">学号/编号</label> 
+									<input name="uId" type="text" class="form-control validate" id="uId" value="" />
 								</div>
 								<div class="form-group mt-3">
-									<label for="password">输入密码</label> <input name="uPassword"
-										type="password" class="form-control validate" id="uPassword" "
-										value="" required />
+									<label for="password">输入密码</label> 
+									<input name="uPassword" type="password" class="form-control validate" id="uPassword" value="" />
 								</div>
-								<div class="form-group mt-3">
+								<!-- 重复密码验证，暂时移除，如果留空会弹两个框 -->
+								<!-- <div class="form-group mt-3">
 									<label for="password">重复密码</label> <input name="uPassword1"
 										type="password" class="form-control validate" id="uPassword1"
 										value="" required />
 										
-								</div>
+								</div> -->
 								<div class="form-group mt-4" align="center">
-									<label><input name="identity"  type="radio" checked="checked" value="0"/>学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-									<label><input name="identity"  type="radio" value="1"/>教师</label>
+									<label><input name="uLevel"  type="radio" checked="checked" value="2"/>学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+									<label><input name="uLevel"  type="radio" value="1"/>教师</label>
 								</div>
 								<div class="form-group mt-4">
 									<button type="submit"
