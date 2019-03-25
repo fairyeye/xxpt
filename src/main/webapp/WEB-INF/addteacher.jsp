@@ -46,6 +46,10 @@
                                 <input id="name" name="name" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
+                                <label for="name">性别</label>
+                                <input id="sex" name="sex" type="text" class="form-control validate"/>
+                            </div>
+                            <div class="form-group mb-3">
                                 <label for="category">学院</label>
                                 <select class="custom-select tm-select-accounts" id="category">
                                     <option selected>软件工程</option>
@@ -53,7 +57,7 @@
                                     <option value="2">软件学院</option>
                                     <option value="3">山崖学院</option>
                                 </select>
-                            </div>
+                            </div></br>
 
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary btn-block text-uppercase">添加</button>

@@ -52,7 +52,7 @@
                     <td><a href="teacherinfo" style="color: #bee5eb">陈平安</a></td>
                     <td>2015/03/03</td>
                     <td>
-                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
+                      <a href="deletesuccess" class="tm-product-delete-link" onclick="return delete_sure()">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
                       </a>
                     </td>
@@ -129,7 +129,7 @@
                   <tr>
                     <td class="tm-product-name">烟草学院</td>
                     <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
+                      <a href="deletesuccess" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
                       </a>
                     </td>

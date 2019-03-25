@@ -44,8 +44,8 @@
                         <span> 教师管理 <i class="fas fa-angle-down"></i> </span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login">注销登录</a>
-                        <a class="dropdown-item" href="info">个人信息</a>
+                        <a class="dropdown-item" href="teacher">查询教师</a>
+                        <a class="dropdown-item" href="addteacher">添加教师</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -54,8 +54,8 @@
                         <span> 学生管理 <i class="fas fa-angle-down"></i> </span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login">注销登录</a>
-                        <a class="dropdown-item" href="info">个人信息</a>
+                        <a class="dropdown-item" href="student">查询学生</a>
+                        <a class="dropdown-item" href="addstudent">添加学生</a>
                     </div>
                 </li>
 
