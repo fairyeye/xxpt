@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfa06496-6705-4c77-9f58-4bbf0c8b19eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deletesuccess.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/teacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
+            <state relative-caret-position="735">
               <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
             </state>
           </provider>
@@ -81,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="273">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -296,7 +292,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553504540002" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553504582049" />
     <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -496,7 +492,7 @@
       <workItem from="1553167309687" duration="259000" />
       <workItem from="1553215370006" duration="2305000" />
       <workItem from="1553217709012" duration="14584000" />
-      <workItem from="1553483702043" duration="3204000" />
+      <workItem from="1553483702043" duration="3495000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA 成功版本。">
       <created>1553218235131</created>
@@ -547,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553247144368</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="完善addteacher.jsp&#10;完善top.jsp&#10;添加deletesuccess.jsp">
+      <created>1553504646756</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553504646757</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -562,11 +565,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31680000" />
+    <option name="totallyTimeSpent" value="31971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3107676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
@@ -657,7 +659,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/Hibiki-Spring/xxpt&#10;&#10;# Conflicts:&#10;#&#9;.classpath&#10;#&#9;.settings/org.eclipse.jdt.core.prefs&#10;#&#9;pom.xml&#10;#&#9;src/main/java/com/xxpt/service/impl/UserServiceImpl.java&#10;#&#9;src/main/java/com/xxpt/web/controller/UserController.java&#10;#&#9;src/main/webapp/WEB-INF/index.jsp&#10;#&#9;src/main/webapp/WEB-INF/info.jsp&#10;#&#9;src/main/webapp/index.html" />
     <MESSAGE value="1.某些页面的登录判断。&#10;2.新建添加教师页面&#10;3.新建添加学院页面&#10;4.新建添加学生页面&#10;5.引入top实现导航栏" />
     <MESSAGE value="修改学生管理图标。" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改学生管理图标。" />
+    <MESSAGE value="完善addteacher.jsp&#10;完善top.jsp&#10;添加deletesuccess.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善addteacher.jsp&#10;完善top.jsp&#10;添加deletesuccess.jsp" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/XXPT3.0.iml">
@@ -881,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -917,8 +913,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="273">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
         </state>
       </provider>
     </entry>
