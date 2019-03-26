@@ -33,16 +33,17 @@
                     <div style="width: 200px;height: 100px;"></div>
                     <div class="col-xl-6 col-lg-6 col-md-12" >
                         <form action="" class="tm-edit-product-form" >
+                            <%--添加教师ID--%>
                             <div class="form-group mb-3">
-                                <label for="name">教师编号</label>
+                                <label for="name">学生学号</label>
                                 <input id="id" name="id" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="name">密码</label>
+                                <label for="name">初始密码</label>
                                 <input id="uPassword" name="uPassword" type="password" readonly="readonly" class="form-control validate" value="000000"/>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="name">教师姓名</label>
+                                <label for="name">学生姓名</label>
                                 <input id="name" name="name" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
@@ -54,7 +55,6 @@
                                     <option value="3">山崖学院</option>
                                 </select>
                             </div>
-
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary btn-block text-uppercase">添加</button>
                             </div>
