@@ -130,9 +130,7 @@
                             <tbody>
                                 <tr align="center">
                                     <th scope="row"><b>管理员</b></th>
-                                    <td>
-                                    	《学习平台开通》
-                                    </td>
+                                    <td>《学习平台开通》</td>
                                     <td colspan="4"><b><a href="noticeinfo" style="color: #bee5eb">楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</a></b></td>
                                     <td>08:00, 18 NOV 2018</td>
                                 </tr>
@@ -141,7 +139,14 @@
                         </br>
 
                         <c:if test="${sessionScope.user.uLevel eq 0}" >
-                            <a href="noticeinfo" style="color: #bee5eb">添加公告</a>
+                            <div align="right">
+                                <a href="addnotice" style="color: #bee5eb">发布公告</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </c:if>
+                        <c:if test="${sessionScope.user.uLevel eq 1}" >
+                            <div align="right">
+                                <a href="addnotice" style="color: #bee5eb">发布公告</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
                         </c:if>
                     </div>
                 </div>

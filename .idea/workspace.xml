@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfa06496-6705-4c77-9f58-4bbf0c8b19eb" name="Default Changelist" comment="完善addteacher.jsp&#10;完善top.jsp&#10;添加deletesuccess.jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addnotice.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addstudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +41,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/teacher.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2159">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="149">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="146" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,71 +53,73 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="179">
+              <caret line="33" column="62" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addstudent.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state relative-caret-position="-106">
+              <caret line="124" column="61" lean-forward="true" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
+              <folding>
+                <element signature="e#7622#7628#0#HTML" expanded="true" />
+                <element signature="e#7628#7634#0#HTML" expanded="true" />
+                <element signature="e#7634#7640#0#HTML" expanded="true" />
+                <element signature="e#7640#7646#0#HTML" expanded="true" />
+                <element signature="e#7646#7652#0#HTML" expanded="true" />
+                <element signature="e#7652#7658#0#HTML" expanded="true" />
+                <element signature="e#7658#7664#0#HTML" expanded="true" />
+                <element signature="e#7664#7670#0#HTML" expanded="true" />
+                <element signature="e#7942#7948#0#HTML" expanded="true" />
+                <element signature="e#7948#7954#0#HTML" expanded="true" />
+                <element signature="e#7954#7960#0#HTML" expanded="true" />
+                <element signature="e#7960#7966#0#HTML" expanded="true" />
+                <element signature="e#7966#7972#0#HTML" expanded="true" />
+                <element signature="e#7972#7978#0#HTML" expanded="true" />
+                <element signature="e#7978#7984#0#HTML" expanded="true" />
+                <element signature="e#7984#7990#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addcollege.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/noticeinfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+            <state relative-caret-position="378">
+              <caret line="48" column="34" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="48" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/bean/Student.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="476">
+              <caret line="49" column="26" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addnotice.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/deletesuccess.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2016">
-              <caret line="96" column="10" lean-forward="true" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+            <state relative-caret-position="244">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1750#1756#0#HTML" expanded="true" />
+                <element signature="e#1756#1762#0#HTML" expanded="true" />
+                <element signature="e#1762#1768#0#HTML" expanded="true" />
+                <element signature="e#1768#1774#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,12 +139,13 @@
       <find>log</find>
       <find>avatar</find>
       <find>Settings</find>
-      <find>tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll</find>
       <find>nav-link</find>
       <find>form-control validate</find>
-      <find>tm-bg-primary-dark tm-block tm-block-settings</find>
-      <find>col-xl-6 col-lg-6 col-md-12</find>
       <find>far fa-trash-alt tm-product-delete-icon</find>
+      <find>tm-bg-primary-dark tm-block tm-block-settings</find>
+      <find>tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll</find>
+      <find>tm-bg-primary-dark tm-block tm-block-h-auto</find>
+      <find>col-xl-6 col-lg-6 col-md-12</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,11 +189,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/deletestudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/deletecollege.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/teacher.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/deletesuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addstudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addnotice.jsp" />
       </list>
     </option>
   </component>
@@ -228,7 +236,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,6 +297,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,7 +307,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553515547480" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553598844210" />
     <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -501,6 +509,7 @@
       <workItem from="1553217709012" duration="14584000" />
       <workItem from="1553483702043" duration="4894000" />
       <workItem from="1553569037539" duration="4602000" />
+      <workItem from="1553595484155" duration="3354000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA 成功版本。">
       <created>1553218235131</created>
@@ -580,13 +589,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37972000" />
+    <option name="totallyTimeSpent" value="41326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26012793" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -774,23 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/noticeinfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/study.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -849,18 +841,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/info.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/deletecollege.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/deletestudent.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addstudent.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="735">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/deletecollege.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/deletestudent.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addcollege.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/bean/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1239">
+          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/deletesuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
@@ -871,56 +881,88 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2016">
-          <caret line="96" column="10" lean-forward="true" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/bean/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addstudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addcollege.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+          <caret line="96" column="10" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/teacher.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2159">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        <state relative-caret-position="149">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="146" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
+        <state relative-caret-position="-106">
+          <caret line="124" column="61" lean-forward="true" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
+          <folding>
+            <element signature="e#7622#7628#0#HTML" expanded="true" />
+            <element signature="e#7628#7634#0#HTML" expanded="true" />
+            <element signature="e#7634#7640#0#HTML" expanded="true" />
+            <element signature="e#7640#7646#0#HTML" expanded="true" />
+            <element signature="e#7646#7652#0#HTML" expanded="true" />
+            <element signature="e#7652#7658#0#HTML" expanded="true" />
+            <element signature="e#7658#7664#0#HTML" expanded="true" />
+            <element signature="e#7664#7670#0#HTML" expanded="true" />
+            <element signature="e#7942#7948#0#HTML" expanded="true" />
+            <element signature="e#7948#7954#0#HTML" expanded="true" />
+            <element signature="e#7954#7960#0#HTML" expanded="true" />
+            <element signature="e#7960#7966#0#HTML" expanded="true" />
+            <element signature="e#7966#7972#0#HTML" expanded="true" />
+            <element signature="e#7972#7978#0#HTML" expanded="true" />
+            <element signature="e#7978#7984#0#HTML" expanded="true" />
+            <element signature="e#7984#7990#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/noticeinfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addteacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="33" column="62" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addnotice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1750#1756#0#HTML" expanded="true" />
+            <element signature="e#1756#1762#0#HTML" expanded="true" />
+            <element signature="e#1762#1768#0#HTML" expanded="true" />
+            <element signature="e#1768#1774#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
