@@ -10,7 +10,7 @@
 <base href="<%=basePath %>"/>
 <head>
 <meta charset="UTF-8">
-<title>Teacher</title>
+<title>学生信息</title>
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
@@ -30,7 +30,7 @@
       <div class="row tm-content-row">
         <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
           <div class="tm-bg-primary-dark tm-block tm-block-products">
-          <h2 class="tm-block-title">教师信息</h2>
+          <h2 class="tm-block-title">学生信息</h2>
             <div class="tm-product-table-container">
               <table class="table table-hover tm-table-small tm-product-table">
                 <thead>
@@ -38,18 +38,18 @@
                     <th scope="col">&nbsp;</th>
                     <th scope="col">序号</th>
                     <th scope="col">所属院系</th>
-                    <th scope="col">教师姓名</th>
-                    <th scope="col">入职日期</th>
+                    <th scope="col">学生姓名</th>
+                    <th scope="col">入学日期</th>
                     <th scope="col">&nbsp;</th>
                   </tr>
                 </thead>
                 <tbody>
-                
+                <c:forEach items="${sessionScope.students}" var="stu">
                  <tr>
                     <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">01</td>
-                    <td>软件学院</td>
-                    <td>陈平安</td>
+                    <td class="tm-product-name">${stu.sId}</td>
+                    <td>${stu.sCollege}</td>
+                    <td>${stu.sName}</td>
                     <td>2015/03/03</td>
                     <td>
                       <a href="#" class="tm-product-delete-link">
@@ -57,108 +57,19 @@
                       </a>
                     </td>
                   </tr>
-                  <tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr><tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td>张三丰</td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  
+                </c:forEach>
                 </tbody>
-
-
-
-
-
-
-
               </table>
             </div>
             <!-- table container -->
             <a
-              href="add-product.html"
-              class="btn btn-primary btn-block text-uppercase mb-3">添加教师</a>
+              href="addstudent"
+              class="btn btn-primary btn-block text-uppercase mb-3">添加学生</a>
             <button class="btn btn-primary btn-block text-uppercase">
              	批量删除
             </button>
           </div>
         </div>
-        
-        
-        
         
         <!-- 右侧 -->
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
@@ -167,53 +78,24 @@
             <div class="tm-product-table-container">
               <table class="table tm-table-small tm-product-table">
                 <tbody>
-                <tr>
-                    <td class="tm-product-name">计算机通信学院</td>
+                  <c:forEach items="${sessionScope.students}" var="stu">
+                    <tr>
+                    <td class="tm-product-name">${stu.sCollege}</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
                       </a>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="tm-product-name">软件学院</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">物理学院</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">数学学院</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">烟草学院</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
+                  </c:forEach>
                 </tbody>
               </table>
             </div>
             <!-- table container -->
-            <button class="btn btn-primary btn-block text-uppercase mb-3">
+            <%--加学校需要改动表结构，麻烦--%>
+            <%--<button class="btn btn-primary btn-block text-uppercase mb-3">
             		  添加学院
-            </button>
+            </button>--%>
           </div>
         </div>
       </div>
