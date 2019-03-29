@@ -21,11 +21,18 @@ public class StudentServiceImpl implements IStudentService{
     }
 
     public Student findById(String sId) throws Exception {
-        return null;
+        Student student = studentMapper.selectByPrimaryKey(sId);
+        if (student == null){
+            throw new Exception("找不到该学生！");
+        }
+        return student;
     }
 
     public List<Student> findByCollege(String sCollege) throws Exception {
-        return null;
+        StudentExample example = new StudentExample();
+        example.createCriteria().andSCollegeEqualTo(sCollege);
+        List<Student> students = studentMapper.selectByExample(example);
+        return students;
     }
 
     public List<Student> findByKeywords(String keywords) throws Exception {
@@ -33,7 +40,12 @@ public class StudentServiceImpl implements IStudentService{
     }
 
     public void deleteById(String sId) throws Exception {
-
+        Student student = studentMapper.selectByPrimaryKey(sId);
+        if (student == null){
+            throw new Exception("找不到该学生！");
+        } else{
+            studentMapper.deleteByPrimaryKey(sId);
+        }
     }
 
     public void batchDelete(List<String> sIds) throws Exception {
@@ -50,13 +62,6 @@ public class StudentServiceImpl implements IStudentService{
         studentMapper.updateByPrimaryKey(student);
     }
 
-    public void saveOrUpdate(Student student) throws Exception {
-        if (student.getsId()!=null){
-            studentMapper.updateByPrimaryKey(student);
-        }else {
-            studentMapper.insert(student);
-        }
-    }
 
     public List<Student> findByTeacher(String sTid) throws Exception {
         return null;

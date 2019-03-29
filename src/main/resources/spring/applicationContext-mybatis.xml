@@ -30,7 +30,6 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 扫描mapper包，加载映射文件。mybatis根据映射文件和接口生成代理类，构建代理类对象 -->
 		<property name="basePackage" value="com.xxpt.dao"></property>
-
 	</bean>
     
 </beans>
