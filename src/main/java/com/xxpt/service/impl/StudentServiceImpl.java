@@ -53,8 +53,10 @@ public class StudentServiceImpl implements IStudentService{
     }
 
     public void save(Student student) throws Exception {
-        if (student.getsId()==null) {
+        if (studentMapper.selectByPrimaryKey(student.getsId()) == null) {
             studentMapper.insert(student);
+        }else {
+            throw new Exception("该学生已存在！");
         }
     }
 

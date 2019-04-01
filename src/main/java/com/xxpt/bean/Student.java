@@ -165,4 +165,15 @@ public class Student {
     public void setsTid(String sTid) {
         this.sTid = sTid == null ? null : sTid.trim();
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "sId='" + sId + '\'' +
+                ", sPassword='" + sPassword + '\'' +
+                ", sName='" + sName + '\'' +
+                ", sCollege='" + sCollege + '\'' +
+                ", sTid='" + sTid + '\'' +
+                '}';
+    }
 }

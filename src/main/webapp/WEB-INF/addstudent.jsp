@@ -7,7 +7,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<title>添加教师</title>
+<title>添加学生</title>
 <base href="<%=basePath %>"/>
 <!-- https://fonts.google.com/specimen/Roboto -->
 <link rel="stylesheet" href="css/fontawesome.min.css" />
@@ -25,36 +25,48 @@
             <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
                 <div class="row">
                     <div class="col-12" align="center">
-                        <h2 class="tm-block-title d-inline-block">添加教师</h2>
+                        <h2 class="tm-block-title d-inline-block">添加学生</h2>
                     </div>
                 </div>
                 <div class="row tm-edit-product-row">
                     <%--占位div控件--%>
                     <div style="width: 200px;height: 100px;"></div>
                     <div class="col-xl-6 col-lg-6 col-md-12" >
-                        <form action="" class="tm-edit-product-form" >
+                        <form action="addonestudent" class="tm-edit-product-form" >
                             <%--添加教师ID--%>
                             <div class="form-group mb-3">
                                 <label for="name">学生学号</label>
-                                <input id="id" name="id" type="text" class="form-control validate"/>
+                                <input id="sId" name="sId" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="name">初始密码</label>
-                                <input id="uPassword" name="uPassword" type="password" readonly="readonly" class="form-control validate" value="000000"/>
+                                <input id="sPassword" name="sPassword" type="password" readonly="readonly" class="form-control validate" value="000000"/>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="name">学生姓名</label>
-                                <input id="name" name="name" type="text" class="form-control validate"/>
+                                <input id="sName" name="sName" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="category">学院</label>
-                                <select class="custom-select tm-select-accounts" id="category">
-                                    <option selected>软件工程</option>
-                                    <option value="1">计算机通信学院</option>
-                                    <option value="2">软件学院</option>
-                                    <option value="3">山崖学院</option>
+                                <select class="custom-select tm-select-accounts" id="sCollege" name="sCollege">
+                                    <option selected>请选择学院</option>
+                                    <c:forEach items="${sessionScope.allCollege}" var="college">
+                                        <option value="${college.cId}">${college.cName}</option>
+                                    </c:forEach>
                                 </select>
                             </div>
+                                <div class="form-group mb-3">
+                                    <label for="category">教师</label>
+                                    <select class="custom-select tm-select-accounts" id="sTid" name="sTid">
+                                        <option selected>请选择教师</option>
+                                        <c:if test="${sessionScope.user.uLevel eq 0}">
+                                        <c:forEach items="${sessionScope.allTeacher}" var="teacher">
+                                            <option value="${teacher.tId}">${teacher.tId}</option>
+                                        </c:forEach>
+                                        </c:if>
+
+                                    </select>
+                                </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary btn-block text-uppercase">添加</button>
                             </div>

@@ -3,17 +3,27 @@ package com.xxpt.web.controller;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
+import com.xxpt.bean.College;
+import com.xxpt.bean.Teacher;
+import com.xxpt.service.ICollegeService;
+import com.xxpt.service.ITeacherService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.xxpt.bean.User;
 import com.xxpt.service.IUserService;
 
+import java.util.List;
+
 @Controller
 public class UserController {
 
 	@Resource
 	IUserService userService;
+	@Resource
+	ITeacherService teacherService;
+	@Resource
+	ICollegeService collegeService;
 
 	@RequestMapping("/userLogin")
 	public String userLogin(User user, HttpSession session) {
@@ -24,6 +34,10 @@ public class UserController {
 				if ("0".equals(user.getuPassword())) {
 					session.setAttribute("user", new User("0", "0", "0"));
 					System.out.println("session取出的" + session.getAttribute("user"));
+					List<Teacher> allTeacher = teacherService.findAllTeacher();
+					session.setAttribute("allTeacher",allTeacher);
+					List<College> allCollege = collegeService.findAllCollege();
+					session.setAttribute("allCollege",allCollege);
 					return "forward:/index";
 				} else {
 					session.setAttribute("msg", "请输入正确的管理员密码");
@@ -32,8 +46,13 @@ public class UserController {
 			} else {
 				st_user = userService.login(user.getuId(), user.getuPassword());
 				session.setAttribute("user", st_user);
+				List<Teacher> allTeacher = teacherService.findAllTeacher();
+				session.setAttribute("allTeacher",allTeacher);
+				List<College> allCollege = collegeService.findAllCollege();
+				session.setAttribute("allCollege",allCollege);
 				return "index";
 			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			session.setAttribute("msg", e.getMessage());

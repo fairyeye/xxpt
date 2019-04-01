@@ -25,4 +25,15 @@ public class StudentController {
         }
         return "student";
     }
+
+    @RequestMapping("/addonestudent")
+    public String addOneStudent(Student student){
+        System.out.println("想要注册的学生："+student);
+        try {
+            studentService.save(student);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "addsuccess";
+    }
 }
