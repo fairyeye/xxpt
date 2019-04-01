@@ -78,9 +78,9 @@
             <div class="tm-product-table-container">
               <table class="table tm-table-small tm-product-table">
                 <tbody>
-                  <c:forEach items="${sessionScope.students}" var="stu">
+                  <c:forEach items="${sessionScope.allCollege}" var="college">
                     <tr>
-                    <td class="tm-product-name">${stu.sCollege}</td>
+                    <td class="tm-product-name" id="${college.cId}">${college.cName}</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -93,9 +93,9 @@
             </div>
             <!-- table container -->
             <%--加学校需要改动表结构，麻烦--%>
-            <%--<button class="btn btn-primary btn-block text-uppercase mb-3">
+            <button class="btn btn-primary btn-block text-uppercase mb-3">
             		  添加学院
-            </button>--%>
+            </button>
           </div>
         </div>
       </div>

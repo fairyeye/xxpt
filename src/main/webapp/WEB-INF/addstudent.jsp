@@ -51,7 +51,7 @@
                                 <select class="custom-select tm-select-accounts" id="sCollege" name="sCollege">
                                     <option selected>请选择学院</option>
                                     <c:forEach items="${sessionScope.allCollege}" var="college">
-                                        <option value="${college.cId}">${college.cName}</option>
+                                        <option value="${college.cName}">${college.cName}</option>
                                     </c:forEach>
                                 </select>
                             </div>

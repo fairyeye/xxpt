@@ -21,18 +21,22 @@ public class StudentController {
             List<Student> allStudent = studentService.findAllStudent();
             session.setAttribute("students",allStudent);
         } catch (Exception e) {
-            return e.getMessage();
+            String msg = e.getMessage();
+            session.setAttribute("msg",msg);
+            return "exception";
         }
         return "student";
     }
 
     @RequestMapping("/addonestudent")
-    public String addOneStudent(Student student){
+    public String addOneStudent(Student student,HttpSession session){
         System.out.println("想要注册的学生："+student);
         try {
             studentService.save(student);
         } catch (Exception e) {
-            e.printStackTrace();
+            String msg = e.getMessage();
+            session.setAttribute("msg",msg);
+            return "exception";
         }
         return "addsuccess";
     }
