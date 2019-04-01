@@ -14,13 +14,25 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
-    <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="css/templatemo-style.css">
-    
+    <%--<script type="javascript">
+      function batchdelete() {
+        var checkedNum = $("input[name='subcheck']:checked").length;
+        if(checkedNum==0){
+          alert("请至少选择一项!");
+          return false;
+        }else {
+          var list = new Array();
+          if ($("input[name='subcheck']:checked")){
+            ${sessionScope.student.}
+            list.put();
+          }
+
+        }
+      }
+    </script>--%>
   </head>
 
   <body id="reportsPage">
@@ -46,13 +58,13 @@
                 <tbody>
                 <c:forEach items="${sessionScope.students}" var="stu">
                  <tr>
-                    <th scope="row"><input type="checkbox" /></th>
+                    <th scope="row"><%--<input type="checkbox" id="subcheck" name="subcheck" />--%></th>
                     <td class="tm-product-name">${stu.sId}</td>
                     <td>${stu.sCollege}</td>
                     <td>${stu.sName}</td>
                     <td>2015/03/03</td>
                     <td>
-                      <a href="#" class="tm-product-delete-link">
+                      <a href="deletestudent/${stu.sId}" class="tm-product-delete-link" onclick="return delete_sure()">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
                       </a>
                     </td>
@@ -65,9 +77,10 @@
             <a
               href="addstudent"
               class="btn btn-primary btn-block text-uppercase mb-3">添加学生</a>
-            <button class="btn btn-primary btn-block text-uppercase">
+            <%--批量删除，麻烦。。。--%>
+            <%--<button class="btn btn-primary btn-block text-uppercase" onclick="batchdelete()">
              	批量删除
-            </button>
+            </button>--%>
           </div>
         </div>
         
@@ -82,8 +95,8 @@
                     <tr>
                     <td class="tm-product-name" id="${college.cId}">${college.cName}</td>
                     <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
+                        <i class="far fa-trash-alt tm-product-delete-icon" ></i>
                       </a>
                     </td>
                   </tr>
@@ -109,15 +122,23 @@
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- https://jquery.com/download/ -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- https://getbootstrap.com/ -->
-    <script>
+    <%--<script>
       $(function() {
         $(".tm-product-name").on("click", function() {
           window.location.href = "edit-product.html";
         });
       });
-    </script>
+    </script>--%>
+  <script language="JavaScript">
+    function delete_sure() {
+      var sure = confirm("确定删除？");
+      if (sure == true){
+        return true;
+      } else{
+        return false;
+      }
+    }
+  </script>
   </body>
 </html>

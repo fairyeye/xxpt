@@ -19,12 +19,12 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <!-- https://getbootstrap.com/ -->
 <link rel="stylesheet" href="css/templatemo-style.css">
-<script type="text/javascript">
+<%--<script type="text/javascript">
 	var msg="${msg}";
 	if(msg.trim().length != 0) {
 		alert(msg);
 	}
-				</script>
+				</script>--%>
 </head>
 
 <body>

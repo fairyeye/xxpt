@@ -32,7 +32,7 @@
                     <%--占位div控件--%>
                     <div style="width: 200px;height: 100px;"></div>
                     <div class="col-xl-6 col-lg-6 col-md-12" >
-                        <form action="addonestudent" class="tm-edit-product-form" >
+                        <form action="addonestudent" class="tm-edit-product-form" method="post">
                             <%--添加教师ID--%>
                             <div class="form-group mb-3">
                                 <label for="name">学生学号</label>
@@ -64,7 +64,9 @@
                                             <option value="${teacher.tId}">${teacher.tId}</option>
                                         </c:forEach>
                                         </c:if>
-
+                                        <c:if test="${sessionScope.user.uLevel eq 1}">
+                                            <option value="${sessionScope.user.uId}">${sessionScope.user.uId}</option>
+                                        </c:if>
                                     </select>
                                 </div>
                             <div class="col-12">

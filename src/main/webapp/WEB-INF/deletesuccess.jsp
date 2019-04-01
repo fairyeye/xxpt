@@ -29,7 +29,7 @@
         </div>
         <div class="col-12 tm-block-col" align="center">
             <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll" >
-                <font size="14" color="white" face="verdana">删除成功</font></br></br>
+                <font size="14" color="white" face="verdana">删除成功&nbsp;&nbsp;&nbsp;<a href="index">返回主页</font></br></br>
             </div>
         </div>
     </div>
