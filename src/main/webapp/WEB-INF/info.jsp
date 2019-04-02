@@ -53,18 +53,9 @@
 						<input id="password" name="password" type="password" readonly="readonly" class="form-control validate" value=${sessionScope.user.uPassword } />
 					</div>
 					<div class="form-group col-lg-6">
-						<label for="name">性别</label>
-						<input id="sex" name="sex" type="text" class="form-control validate" value=${sessionScope.user.uId } />
-					</div>
-					<div class="form-group col-lg-6">
 						<label for="phone">学院</label>
 						<input id="phone" name="phone" type="tel" class="form-control validate" />
 					</div>
-					<div class="form-group col-lg-6">
-						<label for="name">入学年份</label>
-						<input id="date" name="date" type="text" class="form-control validate" value=${sessionScope.user.uId } />
-					</div>
-
 					<div class="col-12">
 						<button type="submit" class="btn btn-primary btn-block text-uppercase" >
 							修改个人信息

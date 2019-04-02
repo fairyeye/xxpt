@@ -4,8 +4,10 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 import com.xxpt.bean.College;
+import com.xxpt.bean.Student;
 import com.xxpt.bean.Teacher;
 import com.xxpt.service.ICollegeService;
+import com.xxpt.service.IStudentService;
 import com.xxpt.service.ITeacherService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +26,8 @@ public class UserController {
 	ITeacherService teacherService;
 	@Resource
 	ICollegeService collegeService;
+	@Resource
+	IStudentService studentService;
 
 	@RequestMapping("/userLogin")
 	public String userLogin(User user, HttpSession session) {
@@ -54,7 +58,6 @@ public class UserController {
 			}
 
 		} catch (Exception e) {
-			e.printStackTrace();
 			session.setAttribute("msg", e.getMessage());
 			return "login";
 		}
@@ -79,6 +82,27 @@ public class UserController {
 			session.setAttribute("msg", "注册失败！");
 			return "register";
 		}
+	}
+
+	@RequestMapping("/userinfo")
+	public String userInfo(HttpSession session){
+		User user = (User)session.getAttribute("user");
+		try {
+			if ("0".equals(user.getuLevel())){
+				return "admininfo";
+			} else if ("1".equals(user.getuLevel())){
+				Teacher teacher = teacherService.findTeacher(user.getuId());
+				session.setAttribute("userinfo",teacher);
+				return "info";
+			} else if ("2".equals(user.getuLevel())){
+				Student student = studentService.findById(user.getuId());
+				session.setAttribute("userinfo",student);
+				return "info";
+			}
+			} catch (Exception e) {
+				session.setAttribute("msg", e.getMessage());
+			}
+		return "info";
 	}
 }
 

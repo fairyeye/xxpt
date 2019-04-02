@@ -65,32 +65,39 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="info" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="userinfo" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="far fa-user"></i>
                         <span> 个人信息 <i class="fas fa-angle-down"></i> </span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login">注销登录</a>
-                        <a class="dropdown-item" href="info">个人信息</a>
+                        <a class="dropdown-item" href="login" onclick="return logout()">注销登录</a>
+                        <a class="dropdown-item" href="userinfo">个人信息</a>
                     </div>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link d-block" href="login">
+
                         <c:if test="${sessionScope.user.uId eq 0}">
+                            <a class="nav-link d-block" href="login" onclick="return logout()">
                             <b>您好，管理员！</b></br>
+                            </a>
                         </c:if>
                         <c:if test="${sessionScope.user.uLevel eq 1}">
+                    <a class="nav-link d-block" href="login" onclick="return logout()">
                             <b>您好，教师${sessionScope.user.uId }！</b></br>
+                    </a>
                         </c:if>
                         <c:if test="${sessionScope.user.uLevel eq 2}">
+                    <a class="nav-link d-block" href="login" onclick="return logout()">
                             <b>您好，学生${sessionScope.user.uId }！</b></br>
+                    </a>
                         </c:if>
                         <c:if test="${sessionScope.user.uId eq null}">
+                            <a class="nav-link d-block" href="login">
                             <b>您好，请登录！</b></br>
+                            </a>
                         </c:if>
-                    </a>
                 </li>
             </ul>
         </div>
@@ -99,8 +106,12 @@
 </body>
 <script language="JavaScript">
     function logout() {
-        sessionStorage.removeItem("user");
-        window.location.href="login";
+      var sure = confirm("确定注销登录");
+      if (sure){
+          return true;
+      } else {
+          return false;
+      }
     }
 </script>
 </html>

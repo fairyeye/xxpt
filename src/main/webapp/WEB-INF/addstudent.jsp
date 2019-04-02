@@ -61,7 +61,7 @@
                                         <option selected>请选择教师</option>
                                         <c:if test="${sessionScope.user.uLevel eq 0}">
                                         <c:forEach items="${sessionScope.allTeacher}" var="teacher">
-                                            <option value="${teacher.tId}">${teacher.tId}</option>
+                                            <option value="${teacher.tId}">${teacher.tName}</option>
                                         </c:forEach>
                                         </c:if>
                                         <c:if test="${sessionScope.user.uLevel eq 1}">

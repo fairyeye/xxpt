@@ -37,7 +37,8 @@
 
   <body id="reportsPage">
   <jsp:include page="top.jsp"></jsp:include>
-    
+
+
     <div class="container mt-5">
       <div class="row tm-content-row">
         <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
@@ -48,10 +49,10 @@
                 <thead>
                   <tr>
                     <th scope="col">&nbsp;</th>
-                    <th scope="col">序号</th>
+                    <th scope="col">学生学号</th>
                     <th scope="col">所属院系</th>
                     <th scope="col">学生姓名</th>
-                    <th scope="col">入学日期</th>
+                    <th scope="col">所属教师编号</th>
                     <th scope="col">&nbsp;</th>
                   </tr>
                 </thead>
@@ -62,7 +63,7 @@
                     <td class="tm-product-name">${stu.sId}</td>
                     <td>${stu.sCollege}</td>
                     <td>${stu.sName}</td>
-                    <td>2015/03/03</td>
+                    <td>${stu.sTid}</td>
                     <td>
                       <a href="deletestudent/${stu.sId}" class="tm-product-delete-link" onclick="return delete_sure()">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -105,7 +106,6 @@
               </table>
             </div>
             <!-- table container -->
-            <%--加学校需要改动表结构，麻烦--%>
             <button class="btn btn-primary btn-block text-uppercase mb-3">
             		  添加学院
             </button>
@@ -123,13 +123,6 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <%--<script>
-      $(function() {
-        $(".tm-product-name").on("click", function() {
-          window.location.href = "edit-product.html";
-        });
-      });
-    </script>--%>
   <script language="JavaScript">
     function delete_sure() {
       var sure = confirm("确定删除？");

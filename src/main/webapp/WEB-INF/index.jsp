@@ -54,7 +54,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="findallstudent" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="findallstudent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="far fa-file-alt"></i>
                                 <span> 学生管理 <i class="fas fa-angle-down"></i> </span>
                             </a>
@@ -70,7 +70,7 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="info" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="userinfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="far fa-user"></i>
                                 <span> 个人信息 <i class="fas fa-angle-down"></i> </span>
                             </a>
@@ -82,20 +82,27 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link d-block" href="login">
-                                <c:if test="${sessionScope.user.uId eq 0}">
+
+                            <c:if test="${sessionScope.user.uId eq 0}">
+                                <a class="nav-link d-block" href="login" onclick="return logout()">
                                     <b>您好，管理员！</b></br>
-                                </c:if>
-                                <c:if test="${sessionScope.user.uLevel eq 1}">
+                                </a>
+                            </c:if>
+                            <c:if test="${sessionScope.user.uLevel eq 1}">
+                                <a class="nav-link d-block" href="login" onclick="return logout()">
                                     <b>您好，教师${sessionScope.user.uId }！</b></br>
-                                </c:if>
-                                <c:if test="${sessionScope.user.uLevel eq 2}">
+                                </a>
+                            </c:if>
+                            <c:if test="${sessionScope.user.uLevel eq 2}">
+                                <a class="nav-link d-block" href="login" onclick="return logout()">
                                     <b>您好，学生${sessionScope.user.uId }！</b></br>
-                                </c:if>
-                                <c:if test="${sessionScope.user.uId eq  null}">
+                                </a>
+                            </c:if>
+                            <c:if test="${sessionScope.user.uId eq null}">
+                                <a class="nav-link d-block" href="login">
                                     <b>您好，请登录！</b></br>
-                                </c:if>
-                            </a>
+                                </a>
+                            </c:if>
                         </li>
                     </ul>
                 </div>
@@ -146,4 +153,14 @@
         </div>
     </div>
 </body>
+<script language="JavaScript">
+    function logout() {
+        var sure = confirm("确定注销登录");
+        if (sure){
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
 </html>
