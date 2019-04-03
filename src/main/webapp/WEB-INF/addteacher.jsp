@@ -9,11 +9,8 @@
 <html>
 <title>添加教师</title>
 <base href="<%=basePath %>"/>
-<!-- https://fonts.google.com/specimen/Roboto -->
 <link rel="stylesheet" href="css/fontawesome.min.css" />
-<!-- https://fontawesome.com/ -->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
-<!-- https://getbootstrap.com/ -->
 <link rel="stylesheet" href="css/templatemo-style.css">
 
 <body>
@@ -32,32 +29,20 @@
                     <%--占位div控件--%>
                     <div style="width: 200px;height: 100px;"></div>
                     <div class="col-xl-6 col-lg-6 col-md-12" >
-                        <form action="" class="tm-edit-product-form" >
+                        <form action="addoneteacher" class="tm-edit-product-form" >
                             <div class="form-group mb-3">
-                                <label for="name">教师编号</label>
-                                <input id="id" name="id" type="text" class="form-control validate"/>
+                                <label >教师编号</label>
+                                <input id="tId" name="tId" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="name">密码</label>
-                                <input id="uPassword" name="uPassword" type="password" readonly="readonly" class="form-control validate" value="000000"/>
+                                <label >教师姓名</label>
+                                <input id="tName" name="tName" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="name">教师姓名</label>
-                                <input id="name" name="name" type="text" class="form-control validate"/>
+                                <label >入职日期</label>
+                                <input id="tHiredate" name="tHiredate" type="text" class="form-control validate"/>
                             </div>
-                            <div class="form-group mb-3">
-                                <label for="name">性别</label>
-                                <input id="sex" name="sex" type="text" class="form-control validate"/>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="category">学院</label>
-                                <select class="custom-select tm-select-accounts" id="category">
-                                    <option selected>软件工程</option>
-                                    <option value="1">计算机通信学院</option>
-                                    <option value="2">软件学院</option>
-                                    <option value="3">山崖学院</option>
-                                </select>
-                            </div></br>
+                            </br>
 
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary btn-block text-uppercase">添加</button>

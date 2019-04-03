@@ -12,14 +12,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Teacher</title>
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-    />
-    <!-- https://fonts.google.com/specimen/Roboto -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
     <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="css/templatemo-style.css"
   </head>
 
@@ -35,56 +30,41 @@
               <table class="table table-hover tm-table-small tm-product-table" >
                 <thead>
                   <tr>
-                    <th scope="col">&nbsp;</th>
                     <th scope="col">序号</th>
-                    <th scope="col">所属院系</th>
                     <th scope="col">教师姓名</th>
                     <th scope="col">入职日期</th>
                     <th scope="col">&nbsp;</th>
                   </tr>
                 </thead>
                 <tbody>
-                
+                <c:forEach items="${sessionScope.allTeacher}" var="teacher">
                  <tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">01</td>
-                    <td>软件学院</td>
-                    <td><a href="teacherinfo" style="color: #bee5eb">陈平安</a></td>
-                    <td>2015/03/03</td>
+                    <td class="tm-product-name">${teacher.tId}</td>
+                    <td><a href="teacherinfo" style="color: #bee5eb">${teacher.tName}</a></td>
+                    <td>${teacher.tHiredate}</td>
+                   <c:if test="${sessionScope.user.uLevel eq 0}">
                     <td>
-                      <a href="deletesuccess" class="tm-product-delete-link" onclick="return delete_sure()">
+                      <a href="deleteoneteacher/${teacher.tId}" class="tm-product-delete-link" onclick="return delete_sure()">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
                       </a>
                     </td>
+                   </c:if>
                   </tr>
-                  <tr>
-                    <th scope="row"><input type="checkbox" /></th>
-                    <td class="tm-product-name">02</td>
-                    <td>计算机通信学院</td>
-                    <td><a href="teacherinfo" style="color: #bee5eb">张三丰</a></td>
-                    <td>2019/03/03</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  
+                </c:forEach>
                 </tbody>
 
               </table>
             </div>
             <!-- table container -->
+            <c:if test="${sessionScope.user.uLevel eq 0}">
             <a href="addteacher" class="btn btn-primary btn-block text-uppercase mb-3">添加教师</a>
+            </c:if>
             <%--<button class="btn btn-primary btn-block text-uppercase">
              	批量删除
             </button>--%>
           </div>
         </div>
-        
-        
-        
-        
+
         <!-- 右侧 -->
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
           <div class="tm-bg-primary-dark tm-block tm-block-product-categories">

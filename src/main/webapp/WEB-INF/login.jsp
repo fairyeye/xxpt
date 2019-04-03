@@ -11,20 +11,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title>Login Page</title>
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
-<!-- https://fonts.google.com/specimen/Open+Sans -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
 <link rel="stylesheet" href="css/fontawesome.min.css" />
-<!-- https://fontawesome.com/ -->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
-<!-- https://getbootstrap.com/ -->
 <link rel="stylesheet" href="css/templatemo-style.css">
-<%--<script type="text/javascript">
+<script type="text/javascript">
 	var msg="${msg}";
 	if(msg.trim().length != 0) {
 		alert(msg);
 	}
-				</script>--%>
+</script>
 </head>
 
 <body>
@@ -94,8 +90,6 @@
 	</div>
 	</footer>
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<!-- https://jquery.com/download/ -->
 	<script src="js/bootstrap.min.js"></script>
-	<!-- https://getbootstrap.com/ -->
 </body>
 </html>
