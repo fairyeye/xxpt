@@ -94,53 +94,25 @@
             <div class="tm-product-table-container">
               <table class="table tm-table-small tm-product-table">
                 <tbody>
-                <tr>
-                    <td class="tm-product-name"><a href="teacherinfo" style="color: #dfeffc">计算机通信学院</a></td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
-                      </a>
-                    </td>
-                  </tr>
+                <c:forEach items="${sessionScope.allCollege}" var="college">
                   <tr>
-                    <td class="tm-product-name">软件学院</td>
+                    <td class="tm-product-name" id="${college.cId}">${college.cName}</td>
                     <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
+                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
+                        <i class="far fa-trash-alt tm-product-delete-icon" ></i>
                       </a>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="tm-product-name">物理学院</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">数学学院</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">烟草学院</td>
-                    <td class="text-center">
-                      <a href="deletesuccess" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon" onclick="return delete_sure()"></i>
-                      </a>
-                    </td>
-                  </tr>
+                </c:forEach>
                 </tbody>
               </table>
             </div>
             <!-- table container -->
-            <button class="btn btn-primary btn-block text-uppercase mb-3" >
-                <a href="addcollege" style="color: #dfeffc">添加学院</a>
+            <c:if test="${sessionScope.user.uLevel eq 0}">
+            <button class="btn btn-primary btn-block text-uppercase mb-3">
+              <a href="addcollege" style="color: #dfeffc">添加学院</a>
             </button>
+            </c:if>
           </div>
         </div>
       </div>

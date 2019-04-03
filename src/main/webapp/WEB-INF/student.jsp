@@ -106,9 +106,11 @@
               </table>
             </div>
             <!-- table container -->
-            <button class="btn btn-primary btn-block text-uppercase mb-3">
-            		  添加学院
-            </button>
+              <c:if test="${sessionScope.user.uLevel eq 0}">
+                  <button class="btn btn-primary btn-block text-uppercase mb-3">
+                      <a href="addcollege" style="color: #dfeffc">添加学院</a>
+                  </button>
+              </c:if>
           </div>
         </div>
       </div>
