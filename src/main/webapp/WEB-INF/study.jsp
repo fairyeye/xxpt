@@ -13,15 +13,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>study</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-    <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/fontawesome.min.css">
-    <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
-    <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/templatemo-style.css">
 </head>
-<body>
+<body id="reportsPage">
 <jsp:include page="top.jsp"></jsp:include>
-		学习
+
+
+<div class="" id="home">
+    <div class="container">
+        <div class="row tm-content-row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+            </div>
+            <div class="col-12 tm-block-col">
+                <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
+                    <font size="14" color="white" face="verdana">公告</font></br></br>
+                    <table class="table">
+                        <thead>
+                        <tr align="center">
+                            <th scope="col">发布者</th>
+                            <th scope="col">公告标题</th>
+                            <th scope="col" colspan="4">公告简介</th>
+                            <th scope="col">发布时间</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr align="center">
+                            <th scope="row"><b>管理员</b></th>
+                            <td>《学习平台开通》</td>
+                            <td colspan="4"><b><a href="noticeinfo" style="color: #bee5eb">楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</a></b></td>
+                            <td>08:00, 18 NOV 2018</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </br>
+
+                    <c:if test="${sessionScope.user.uLevel eq 0}" >
+                        <div align="right">
+                            <a href="addnotice" style="color: #bee5eb">发布公告</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </c:if>
+                    <c:if test="${sessionScope.user.uLevel eq 1}" >
+                        <div align="right">
+                            <a href="addnotice" style="color: #bee5eb">发布公告</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </c:if>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </html>

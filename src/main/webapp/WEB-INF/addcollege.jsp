@@ -31,10 +31,6 @@
                     <div class="col-xl-6 col-lg-6 col-md-12" >
                         <form action="addonecollege" class="tm-edit-product-form" method="post">
                             <div class="form-group mb-3">
-                                <label >学院编号</label>
-                                <input id="cId" name="cId" type="text" class="form-control validate"/>
-                            </div>
-                            <div class="form-group mb-3">
                                 <label >学院名称</label>
                                 <input id="cName" name="cName" type="text" class="form-control validate"/>
                             </div>

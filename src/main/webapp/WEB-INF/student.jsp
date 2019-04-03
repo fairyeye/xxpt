@@ -11,9 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <title>学生信息</title>
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-    />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css">
@@ -86,33 +84,36 @@
         </div>
         
         <!-- 右侧 -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
-          <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
-            <h2 class="tm-block-title">院系名称</h2>
-            <div class="tm-product-table-container">
-              <table class="table tm-table-small tm-product-table">
-                <tbody>
-                  <c:forEach items="${sessionScope.allCollege}" var="college">
-                    <tr>
-                    <td class="tm-product-name" id="${college.cId}">${college.cName}</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
-                        <i class="far fa-trash-alt tm-product-delete-icon" ></i>
-                      </a>
-                    </td>
-                  </tr>
-                  </c:forEach>
-                </tbody>
-              </table>
-            </div>
-            <!-- table container -->
-              <c:if test="${sessionScope.user.uLevel eq 0}">
-                  <button class="btn btn-primary btn-block text-uppercase mb-3">
-                      <a href="addcollege" style="color: #dfeffc">添加学院</a>
-                  </button>
-              </c:if>
+          <!-- 右侧 -->
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+              <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+                  <h2 class="tm-block-title">院系名称</h2>
+                  <div class="tm-product-table-container">
+                      <table class="table tm-table-small tm-product-table">
+                          <tbody>
+                          <c:forEach items="${sessionScope.allCollege}" var="college">
+                              <tr>
+                                  <td class="tm-product-name" id="${college.cId}">${college.cName}</td>
+                                  <c:if test="${sessionScope.user.uLevel eq 0}">
+                                  <td class="text-center">
+                                      <a href="deleteonecollege/${college.cId}" class="tm-product-delete-link" onclick="return delete_sure()">
+                                          <i class="far fa-trash-alt tm-product-delete-icon" ></i>
+                                      </a>
+                                  </td>
+                                  </c:if>
+                              </tr>
+                          </c:forEach>
+                          </tbody>
+                      </table>
+                  </div>
+                  <!-- table container -->
+                  <c:if test="${sessionScope.user.uLevel eq 0}">
+                      <button class="btn btn-primary btn-block text-uppercase mb-3">
+                          <a href="addcollege" style="color: #dfeffc">添加学院</a>
+                      </button>
+                  </c:if>
+              </div>
           </div>
-        </div>
       </div>
     </div>
     <footer class="tm-footer row tm-mt-small">

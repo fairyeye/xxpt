@@ -50,7 +50,7 @@ public class StudentController {
         }
         try {
             studentService.deleteById(sid);
-            return "deletesuccess";
+            return "redirect:/deletesuccess";
         } catch (Exception e) {
             String msg = e.getMessage();
             session.setAttribute("msg",msg);

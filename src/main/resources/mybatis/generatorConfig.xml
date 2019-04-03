@@ -35,11 +35,10 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table tableName="teacher" domainObjectName="Teacher" ></table>
-       <!-- <table tableName="student" domainObjectName="Student" ></table>
-
-        <table tableName="user" domainObjectName="User" ></table>
-        <table tableName="college" domainObjectName="College" ></table>-->
+       <!-- <table tableName="teacher" domainObjectName="Teacher" ></table>
+        <table tableName="student" domainObjectName="Student" ></table>
+        <table tableName="user" domainObjectName="User" ></table>-->
+        <table tableName="college" domainObjectName="College" ></table>
 
         <!-- 映射配置 -->
 

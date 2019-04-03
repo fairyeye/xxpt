@@ -35,19 +35,19 @@
                         <form action="addonestudent" class="tm-edit-product-form" method="post">
                             <%--添加教师ID--%>
                             <div class="form-group mb-3">
-                                <label for="name">学生学号</label>
+                                <label >学生学号</label>
                                 <input id="sId" name="sId" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="name">初始密码</label>
+                                <label >初始密码</label>
                                 <input id="sPassword" name="sPassword" type="password" readonly="readonly" class="form-control validate" value="000000"/>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="name">学生姓名</label>
+                                <label >学生姓名</label>
                                 <input id="sName" name="sName" type="text" class="form-control validate"/>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="category">学院</label>
+                                <label >学院</label>
                                 <select class="custom-select tm-select-accounts" id="sCollege" name="sCollege">
                                     <option selected>请选择学院</option>
                                     <c:forEach items="${sessionScope.allCollege}" var="college">
@@ -56,7 +56,7 @@
                                 </select>
                             </div>
                                 <div class="form-group mb-3">
-                                    <label for="category">教师</label>
+                                    <label >教师</label>
                                     <select class="custom-select tm-select-accounts" id="sTid" name="sTid">
                                         <option selected>请选择教师</option>
                                         <c:if test="${sessionScope.user.uLevel eq 0}">

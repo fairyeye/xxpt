@@ -75,12 +75,10 @@
               </table>
             </div>
             <!-- table container -->
-            <a
-              href="addteacher"
-              class="btn btn-primary btn-block text-uppercase mb-3">添加教师</a>
-            <button class="btn btn-primary btn-block text-uppercase">
+            <a href="addteacher" class="btn btn-primary btn-block text-uppercase mb-3">添加教师</a>
+            <%--<button class="btn btn-primary btn-block text-uppercase">
              	批量删除
-            </button>
+            </button>--%>
           </div>
         </div>
         
@@ -97,11 +95,13 @@
                 <c:forEach items="${sessionScope.allCollege}" var="college">
                   <tr>
                     <td class="tm-product-name" id="${college.cId}">${college.cName}</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link" onclick="return delete_sure()">
-                        <i class="far fa-trash-alt tm-product-delete-icon" ></i>
-                      </a>
-                    </td>
+                    <c:if test="${sessionScope.user.uLevel eq 0}">
+                      <td class="text-center">
+                        <a href="deleteonecollege/${college.cId}" class="tm-product-delete-link" onclick="return delete_sure()">
+                          <i class="far fa-trash-alt tm-product-delete-icon" ></i>
+                        </a>
+                      </td>
+                    </c:if>
                   </tr>
                 </c:forEach>
                 </tbody>
@@ -119,9 +119,7 @@
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- https://jquery.com/download/ -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- https://getbootstrap.com/ -->
     <script language="JavaScript">
       function delete_sure() {
           var sure = confirm("确定删除？");

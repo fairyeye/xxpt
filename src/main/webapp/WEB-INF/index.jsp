@@ -37,15 +37,21 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto h-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index">
-                                <i class="fas fa-tachometer-alt"></i> 主页
-                                <span class="sr-only">(current)</span>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <%--图标--%>
+                                <%--<i class="far fa-file-alt"></i>--%>
+                                <span> 主页 <i class="fas fa-angle-down"></i> </span>
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index">主页</a>
+                                <a class="dropdown-item" href="">占位</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="teacher" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-file-alt"></i>
+                                <%--图标--%>
+                                <%--<i class="far fa-file-alt"></i>--%>
                                 <span> 教师管理 <i class="fas fa-angle-down"></i> </span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,8 +60,9 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="findallstudent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-file-alt"></i>
+                            <a class="nav-link dropdown-toggle" href="findallstudent" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <%--图标--%>
+                                <%--<i class="far fa-file-alt"></i>--%>
                                 <span> 学生管理 <i class="fas fa-angle-down"></i> </span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,17 +73,19 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="study">
-                                <i class="fas fa-cog"></i> 学习区
+                                <%--图标--%>
+                                <%--<i class="fas fa-cog"></i>--%> 学习区
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="userinfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-user"></i>
+                            <a class="nav-link dropdown-toggle" href="userinfo" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <%--图标--%>
+                                <%--<i class="far fa-user"></i>--%>
                                 <span> 个人信息 <i class="fas fa-angle-down"></i> </span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="login">注销登录</a>
-                                <a class="dropdown-item" href="info">个人信息</a>
+                                <a class="dropdown-item" href="login" onclick="return logout()">注销登录</a>
+                                <a class="dropdown-item" href="userinfo">个人信息</a>
                             </div>
                         </li>
                     </ul>
@@ -153,6 +162,8 @@
         </div>
     </div>
 </body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script language="JavaScript">
     function logout() {
         var sure = confirm("确定注销登录");
