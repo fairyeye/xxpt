@@ -29,6 +29,19 @@ public class TeacherController {
         }
     }
 
+    @RequestMapping("/findallteacher")
+    public String findAllTeacher(HttpSession session){
+        try {
+            List<Teacher> allTeacher = teacherService.findAllTeacher();
+            session.setAttribute("allTeacher",allTeacher);
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            session.setAttribute("msg",msg);
+            return "exception";
+        }
+        return "teacher";
+    }
+
     @RequestMapping("/deleteoneteacher/{tId}")
     public String deleteOneTeacher(@PathVariable String tId, HttpSession session){
         try {

@@ -36,7 +36,13 @@ public class StudentServiceImpl implements IStudentService{
     }
 
     public List<Student> findByKeywords(String keywords) throws Exception {
-        return null;
+        StudentExample example = new StudentExample();
+        example.createCriteria().andSCollegeEqualTo(keywords);
+        List<Student> students = studentMapper.selectByExample(example);
+        if (students == null){
+            throw new Exception("这个学院没有学生！");
+        }
+        return students;
     }
 
     public void deleteById(String sId) throws Exception {

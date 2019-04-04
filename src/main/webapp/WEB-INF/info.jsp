@@ -41,11 +41,11 @@
 				<h2 class="tm-block-title">个人信息</h2>
 				<form action="infoUpdate" class="tm-signup-form row">
 					<div class="form-group col-lg-6">
-						<label for="name">学号/编号</label>
+						<label >学号/编号</label>
 						<input id="uId" name="uId" type="text" readonly="readonly" class="form-control validate" value=${sessionScope.user.uId } />
 					</div>
 					<div class="form-group col-lg-6">
-						<label for="name">姓名</label>
+						<label >姓名</label>
 						<input id="email" name="name" type="text" class="form-control validate" />
 					</div>
 					<div class="form-group col-lg-6">
@@ -61,7 +61,7 @@
 							修改个人信息
 						</button>
 					</div>
-					<label for="name"> &nbsp;&nbsp;</label>
+					<label > &nbsp;&nbsp;</label>
 					<div class="col-12">
 						<button type="reset" onclick="window.location.href='updatePassword'" class="btn btn-primary btn-block text-uppercase" >
 							修改密码

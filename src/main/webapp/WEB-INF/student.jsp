@@ -35,7 +35,9 @@
 
   <body id="reportsPage">
   <jsp:include page="top.jsp"></jsp:include>
-
+  <%--占位控件--%>
+  <div style="height: 20px;"></div>
+  <%--搜索框--%>
 
     <div class="container mt-5">
       <div class="row tm-content-row">
@@ -93,7 +95,7 @@
                           <tbody>
                           <c:forEach items="${sessionScope.allCollege}" var="college">
                               <tr>
-                                  <td class="tm-product-name" id="${college.cId}">${college.cName}</td>
+                                  <td class="tm-product-name" id="${college.cId}"><a style="color: #bee5eb;" href="findsomestudent/${college.cName}">${college.cName}</a></td>
                                   <c:if test="${sessionScope.user.uLevel eq 0}">
                                   <td class="text-center">
                                       <a href="deleteonecollege/${college.cId}" class="tm-product-delete-link" onclick="return delete_sure()">

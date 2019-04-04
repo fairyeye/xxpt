@@ -49,7 +49,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="teacher" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="teacher" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <%--图标--%>
                                 <%--<i class="far fa-file-alt"></i>--%>
                                 <span> 教师管理 <i class="fas fa-angle-down"></i> </span>
@@ -60,7 +60,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="findallstudent" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="findallstudent"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <%--图标--%>
                                 <%--<i class="far fa-file-alt"></i>--%>
                                 <span> 学生管理 <i class="fas fa-angle-down"></i> </span>
@@ -78,7 +78,7 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="userinfo" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="userinfo"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <%--图标--%>
                                 <%--<i class="far fa-user"></i>--%>
                                 <span> 个人信息 <i class="fas fa-angle-down"></i> </span>

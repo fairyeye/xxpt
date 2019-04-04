@@ -57,4 +57,17 @@ public class StudentController {
             return "exception";
         }
     }
+
+    @RequestMapping("/findsomestudent/{sName}")
+    public String findSomeStudent(@PathVariable String sName,HttpSession session){
+        try {
+            List<Student> allStudent = studentService.findByKeywords(sName);
+            session.setAttribute("students",allStudent);
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            session.setAttribute("msg",msg);
+            return "exception";
+        }
+        return "redirect:/student";
+    }
 }

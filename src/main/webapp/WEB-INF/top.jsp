@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto h-100">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="index" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="index" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <%--图标--%>
                         <%--<i class="far fa-file-alt"></i>--%>
                         <span> 主页 <i class="fas fa-angle-down"></i> </span>
@@ -44,18 +44,18 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="teacher" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="findallteacher"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <%--图标--%>
                         <%--<i class="far fa-file-alt"></i>--%>
                         <span> 教师管理 <i class="fas fa-angle-down"></i> </span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="teacher">查询教师</a>
+                        <a class="dropdown-item" href="findallteacher">查询教师</a>
                         <a class="dropdown-item" href="addteacher">添加教师</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="findallstudent" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="findallstudent"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <%--图标--%>
                         <%--<i class="far fa-file-alt"></i>--%>
                         <span> 学生管理 <i class="fas fa-angle-down"></i> </span>
