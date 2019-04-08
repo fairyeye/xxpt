@@ -22,7 +22,7 @@
     <div class="row">
         <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto" align="center">
             <div class="tm-bg-primary-dark tm-block tm-block-h-auto" align="center">
-                <form action="">
+                <form action="addonenotice">
                     <div class="row">
                         <div class="col-12" align="center">
                             <h2 class="tm-block-title d-inline-block">发布新公告</h2>
@@ -30,19 +30,13 @@
                     </div>
                     <div class="row tm-edit-product-row">
                         <%--占位div控件--%>
-                        <div style="width: 200px;height: 100px;" align="center"></div>
-
+                        <div style="width: 280px;height: 100px;" align="center"></div>
                         <div class="form-group mb-3">
-                            <label for="name">发布者</label>
-                            <input id="id" name="id" type="text" class="form-control validate"/>
-                        </div>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <div class="form-group mb-3">
-                            <label for="name">公告标题</label>
-                            <input id="uPassword" name="uPassword" type="password" class="form-control validate"
-                                   value="000000"/>
+                            <label>公告标题</label>
+                            <input id="nTitle" name="nTitle" type="text" class="form-control validate"/>
                         </div>
                     </div>
-                    <textarea style="width: 745px;height: 500px;background-color:transparent;color: #ffffff;">
+                    <textarea style="width: 745px;height: 500px;background-color:transparent;color: #ffffff;border: 2px #bee5eb solid;" name="nContent">
 
                     </textarea>
                     <div class="col-xl-6 col-lg-6 col-md-12" align="center">

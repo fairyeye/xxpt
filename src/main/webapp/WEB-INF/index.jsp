@@ -144,16 +144,16 @@
                                     <th scope="col">发布时间</th>
                                 </tr>
                             </thead>
-                            <c:forEach items="${applicationScope.notices}" var="notice">
                             <tbody>
+                            <c:forEach items="${applicationScope.notices}" var="notice">
                                 <tr align="center">
                                     <th scope="row"><b>${notice.nAuthor}</b></th>
                                     <td>《${notice.nTitle}》</td>
                                     <td colspan="4"><b><a href="noticeinfo/${notice.nId}" style="color: #bee5eb">${fn:substring(notice.nContent,0,30)}</a></b></td>
                                     <td>${notice.nTime}</td>
                                 </tr>
-                            </tbody>
                             </c:forEach>
+                            </tbody>
                         </table>
                         </br>
 

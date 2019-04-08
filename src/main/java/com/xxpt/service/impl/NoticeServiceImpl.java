@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 @Service
 public class NoticeServiceImpl implements INoticeService {
@@ -18,6 +20,7 @@ public class NoticeServiceImpl implements INoticeService {
     public List<Notice> findAllNotice() throws Exception {
         SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
         NoticeExample example = new NoticeExample();
+        example.setOrderByClause("n_time desc");
         List<Notice> notices = noticeMapper.selectByExample(example);
         return notices;
     }
@@ -36,6 +39,9 @@ public class NoticeServiceImpl implements INoticeService {
     }
 
     public void add(Notice notice) throws Exception {
+        Date date = new Date();
+        Timestamp timeStamep = new Timestamp(date.getTime());
+        notice.setnTime(timeStamep);
         noticeMapper.insert(notice);
     }
 }
