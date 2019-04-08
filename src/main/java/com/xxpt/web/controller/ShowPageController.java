@@ -17,5 +17,4 @@ public class ShowPageController {
 	public String showPage(){
 		return "index";
 	}
-	
 }

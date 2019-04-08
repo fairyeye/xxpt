@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
     <%String path=request.getContextPath()+"/"; %>
     <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,11 +72,19 @@
                             </div>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="study">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href=""  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <%--图标--%>
-                                <%--<i class="fas fa-cog"></i>--%> 学习区
+                                <%--<i class="far fa-file-alt"></i>--%>
+                                <span> 学习区 <i class="fas fa-angle-down"></i> </span>
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="">交流答疑</a>
+                                <a class="dropdown-item" href="">学习视频</a>
+                                <a class="dropdown-item" href="">课件上传</a>
+                                <a class="dropdown-item" href="">课件下载</a>
+                                <a class="dropdown-item" href="">待办作业</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="userinfo"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -135,14 +144,16 @@
                                     <th scope="col">发布时间</th>
                                 </tr>
                             </thead>
+                            <c:forEach items="${applicationScope.notices}" var="notice">
                             <tbody>
                                 <tr align="center">
-                                    <th scope="row"><b>管理员</b></th>
-                                    <td>《学习平台开通》</td>
-                                    <td colspan="4"><b><a href="noticeinfo" style="color: #bee5eb">楼主不想换行就是用行内元素span，css中的标签分为行内元素和行元素，行内就是不换行</a></b></td>
-                                    <td>08:00, 18 NOV 2018</td>
+                                    <th scope="row"><b>${notice.nAuthor}</b></th>
+                                    <td>《${notice.nTitle}》</td>
+                                    <td colspan="4"><b><a href="noticeinfo/${notice.nId}" style="color: #bee5eb">${fn:substring(notice.nContent,0,30)}</a></b></td>
+                                    <td>${notice.nTime}</td>
                                 </tr>
                             </tbody>
+                            </c:forEach>
                         </table>
                         </br>
 

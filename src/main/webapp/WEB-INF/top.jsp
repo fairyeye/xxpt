@@ -66,11 +66,19 @@
                     </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="study">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=""  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <%--图标--%>
-                        <%--<i class="fas fa-cog"></i>--%> 学习区
+                        <%--<i class="far fa-file-alt"></i>--%>
+                        <span> 学习区 <i class="fas fa-angle-down"></i> </span>
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="">交流答疑</a>
+                        <a class="dropdown-item" href="">学习视频</a>
+                        <a class="dropdown-item" href="">课件上传</a>
+                        <a class="dropdown-item" href="">课件下载</a>
+                        <a class="dropdown-item" href="">待办作业</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="userinfo" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
