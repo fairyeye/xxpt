@@ -1,0 +1,18 @@
+
+]squid:S11920"FDefine a constant instead of duplicating this literal "login" 3 times.(Íý‡Ç
+esquid:S1192J"IDefine a constant instead of duplicating this literal "register" 3 times.(ã‹¥œúÿÿÿÿ
+T
+squid:S106""9Replace this use of System.out or System.err by a logger.(½º¢«üÿÿÿÿ
+O
+squid:S106("9Replace this use of System.out or System.err by a logger.(Êõ‰¹
+O
+squid:S106D"9Replace this use of System.out or System.err by a logger.(óÃç£
+Qsquid:S2441'":Make "User" serializable or don't store it in the session.(Ü…˜—
+isquid:S2441*"MMake "List" and its parameters serializable or don't store it in the session.(õïÔÃÿÿÿÿÿ
+dsquid:S2441,"MMake "List" and its parameters serializable or don't store it in the session.(ñ Óÿ
+Qsquid:S24414":Make "User" serializable or don't store it in the session.(°„Å¼
+isquid:S24416"MMake "List" and its parameters serializable or don't store it in the session.(õïÔÃÿÿÿÿÿ
+dsquid:S24418"MMake "List" and its parameters serializable or don't store it in the session.(ñ Óÿ
+Tsquid:S2441_"=Make "Teacher" serializable or don't store it in the session.(œ«Œ£
+Tsquid:S2441c"=Make "Student" serializable or don't store it in the session.(§«Íž
+nsquid:S00117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ½ÈÊüÿÿÿÿ

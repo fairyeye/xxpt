@@ -1,0 +1,10 @@
+
+Bsquid:S11682"+Return an empty collection instead of null.(¥¹ï
+^squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(º“áì
+^squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(±ı¾™
+^squid:S00112#"FDefine and throw a dedicated exception instead of using a generic one.(º“áì
+csquid:S00112,"FDefine and throw a dedicated exception instead of using a generic one.(ı·…×úÿÿÿÿ
+^squid:S001128"FDefine and throw a dedicated exception instead of using a generic one.(±»·¼
+^squid:S00112<"FDefine and throw a dedicated exception instead of using a generic one.(ìÖöß
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ì¶åÿÿÿÿÿ
+squid:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(€ŞöÈüÿÿÿÿ
