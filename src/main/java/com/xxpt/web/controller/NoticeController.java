@@ -41,8 +41,8 @@ public class NoticeController {
         try {
             noticeService.add(notice);
             ServletContext servletContext = session.getServletContext();
-            List<Notice> notices = (List<Notice>) servletContext.getAttribute("notices");
-            notices.add(notice);
+            List<Notice> allNotice = noticeService.findAllNotice();
+            servletContext.setAttribute("notices",allNotice);
             return "addsuccess";
         } catch (Exception e) {
             String msg = e.getMessage();
