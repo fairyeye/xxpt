@@ -31,5 +31,20 @@
 		<!-- 扫描mapper包，加载映射文件。mybatis根据映射文件和接口生成代理类，构建代理类对象 -->
 		<property name="basePackage" value="com.xxpt.dao"></property>
 	</bean>
+
+	<!--springMVC文件上传解析器-->
+	<bean id="multipartResolver"   class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+		<!--定义上传的最大大小，单位为byte-->
+		<property name="maxUploadSize">
+			<value>104857600</value>
+		</property>
+		<property name="maxInMemorySize">
+			<value>1024</value>
+		</property>
+		<!--指定上传的默认编码-->
+		<property name="defaultEncoding">
+			<value>utf-8</value>
+		</property>
+	</bean>
     
 </beans>

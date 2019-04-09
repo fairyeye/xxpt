@@ -81,7 +81,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="">交流答疑</a>
                                 <a class="dropdown-item" href="">学习视频</a>
-                                <a class="dropdown-item" href="">课件上传</a>
+                                <a class="dropdown-item" href="courseware">课件上传</a>
                                 <a class="dropdown-item" href="">课件下载</a>
                                 <a class="dropdown-item" href="">待办作业</a>
                             </div>
