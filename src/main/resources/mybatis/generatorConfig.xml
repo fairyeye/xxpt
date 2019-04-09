@@ -40,7 +40,8 @@
         <!--<table tableName="student" domainObjectName="Student" ></table>-->
         <!--<table tableName="user" domainObjectName="User" ></table>-->
         <!--<table tableName="college" domainObjectName="College" ></table>-->
-        <table tableName="notice" domainObjectName="Notice" ></table>
+        <!--<table tableName="notice" domainObjectName="Notice" ></table>-->
+        <table tableName="pdf" domainObjectName="Pdf" ></table>
 
 
 

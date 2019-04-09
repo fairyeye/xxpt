@@ -22,11 +22,53 @@
 <jsp:include page="top.jsp"></jsp:include>
 
 <div class="container" align="center">
-    <div style="height: 100px;"></div>
-    <form action="" method="post" enctype="multipart/form-data">
-            <input type="file" accept=".application/pdf" name="" id="">
+    <div>
+    <div style="height: 30px;"></div>
+        <c:if test="${sessionScope.user.uLevel eq 1}">
+    <form action="pdfupload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" >
         <input type="submit" id="i-check" value="上传">
     </form>
+        </c:if>
+    </div>
+    <div style="height: 15px;"></div>
+    <div class="col-12 tm-block-col">
+        <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
+            <table class="table">
+                <thead>
+                <tr align="center">
+                    <th scope="col">教师编号</th>
+                    <th scope="col">课件提题目</th>
+                    <th scope="col">上传时间</th>
+                    <th scope="col"> 操 作 </th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach items="${sessionScope.pdfs}" var="pdf">
+                    <tr align="center">
+                        <th scope="row"><b>${pdf.pdfAuthor}</b></th>
+                        <td>《${pdf.pdfName}》</td>
+                        <td>${pdf.pdfTime}</td>
+                        <c:choose>
+                            <c:when test="${sessionScope.user.uLevel eq 1}">
+                                <td><a href="pdfdownload/${pdf.pdfName}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
+                                <c:if test="${sessionScope.user.uId eq pdf.pdfAuthor}">
+                                <a href="/" style="color: #bee5eb">删除</a>
+                                </c:if>
+                                </td>
+                            </c:when>
+                            <c:otherwise>
+                                <td><a href="pdfdownload/${pdf.pdfName}" style="color: #bee5eb">下载</a></td>
+                            </c:otherwise>
+                        </c:choose>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+            </br>
+        </div>
+    </div>
 </div>
+
 </body>
 </html>
