@@ -25,6 +25,12 @@ public class PdfController {
     @PostMapping("/pdfupload")
     public String pdfUpload(@RequestParam("file") CommonsMultipartFile file, HttpSession session){
         String originalFilename = file.getOriginalFilename();
+        //避免用户不选择文件直接上传的问题
+        if ("".equals(originalFilename.trim())){
+            String msg = "请选择要上传的文件!";
+            session.setAttribute("msg",msg);
+            return "courseware";
+        }
         ServletContext sc = session.getServletContext();
         String path = sc.getRealPath("/pdf") + "\\";
         //增加负担，暂时不上传
@@ -77,18 +83,19 @@ public class PdfController {
         }
     }
 
-    @RequestMapping("/pdfdownload/{pdfName}")
-    public String downLoad(@PathVariable String pdfName, HttpServletResponse response){
-        System.out.println(pdfName);
+    @RequestMapping("/pdfdownload/{pdfId}")
+    public String downLoad(@PathVariable int pdfId, HttpServletResponse response,HttpSession session){
         FileInputStream is = null;
         OutputStream os = null;
+        System.out.println(pdfId);
         try {
-            is = new FileInputStream(new File("D:\\workspace\\XXPT3.0\\target\\XXPT3.0\\pdf\\SQL规范.pptx"));
-            String filename = new String(pdfName.getBytes(), "ISO-8859-1");
+            Pdf pdf = pdfService.findOnePdf(pdfId);
+            is = new FileInputStream(new File(pdf.getPdfPath()));
+            String filename = new String(pdf.getPdfName().getBytes(), "ISO-8859-1");
             // 1.ContentType类型，这样设置，会自动判断下载文件类型
             response.setContentType("multipart/form-data");
             // 2.设置文件头：最后一个参数是设置下载文件名
-            response.setHeader("Content-Disposition", "attachment;fileName="+filename+".pptx");
+            response.setHeader("Content-Disposition", "attachment;fileName="+filename);
             os = response.getOutputStream();
             byte[] buffer = new byte[1024];
             int i = -1;
@@ -98,11 +105,23 @@ public class PdfController {
             os.flush();
             os.close();
             is.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            return "courseware";
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            session.setAttribute("msg",msg);
+            return "exception";
         }
-        return "courseware";
+    }
+
+    @RequestMapping("/pdfdelete/{pdfId}")
+    public String pdfDelete(@PathVariable int pdfId,HttpSession session){
+        try {
+            pdfService.delete(pdfId);
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            session.setAttribute("msg",msg);
+            return "exception";
+        }
+        return "redirect:/deletesuccess";
     }
 }

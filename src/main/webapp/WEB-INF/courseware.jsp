@@ -51,14 +51,14 @@
                         <td>${pdf.pdfTime}</td>
                         <c:choose>
                             <c:when test="${sessionScope.user.uLevel eq 1}">
-                                <td><a href="pdfdownload/${pdf.pdfName}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
+                                <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
                                 <c:if test="${sessionScope.user.uId eq pdf.pdfAuthor}">
-                                <a href="/" style="color: #bee5eb">删除</a>
+                                <a href="pdfdelete/${pdf.pdfId}" style="color: #bee5eb">删除</a>
                                 </c:if>
                                 </td>
                             </c:when>
                             <c:otherwise>
-                                <td><a href="pdfdownload/${pdf.pdfName}" style="color: #bee5eb">下载</a></td>
+                                <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a></td>
                             </c:otherwise>
                         </c:choose>
                     </tr>

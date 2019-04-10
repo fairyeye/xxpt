@@ -7,6 +7,7 @@ import com.xxpt.service.IPdfService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.io.File;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
@@ -25,10 +26,22 @@ public class PdfServiceImpl implements IPdfService {
         }
     }
 
-    public void delete(int id) throws Exception {
-        int i = pdfMapper.deleteByPrimaryKey(id);
+    public void delete(int pdfId) throws Exception {
+        Pdf pdf = pdfMapper.selectByPrimaryKey(pdfId);
+        if (pdf == null){
+            throw new Exception("课件不存在！");
+        }
+        int i = pdfMapper.deleteByPrimaryKey(pdfId);
         if (i != 1){
             throw new Exception("删除失败！");
+        }
+
+        File file = new File(pdf.getPdfPath());
+        // 如果文件路径所对应的文件存在，并且是一个文件，则直接删除
+        if (file.exists() && file.isFile()) {
+            if (!file.delete()) {
+                throw new Exception("删除失败！");
+            }
         }
     }
 
@@ -37,5 +50,13 @@ public class PdfServiceImpl implements IPdfService {
         example.setOrderByClause("pdf_time");
         List<Pdf> pdfs = pdfMapper.selectByExample(example);
         return pdfs;
+    }
+
+    public Pdf findOnePdf(int pdfId) throws Exception {
+        Pdf pdf = pdfMapper.selectByPrimaryKey(pdfId);
+        if (pdf == null){
+            throw new Exception("课件不存在！");
+        }
+        return pdf;
     }
 }

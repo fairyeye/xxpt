@@ -9,4 +9,5 @@ public interface IPdfService {
     void save(Pdf pdf) throws Exception;
     void delete(int id) throws Exception;
     List<Pdf> findAllPdf() throws Exception;
+    Pdf findOnePdf(int id) throws Exception;
 }

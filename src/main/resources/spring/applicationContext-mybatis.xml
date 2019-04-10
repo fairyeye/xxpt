@@ -39,7 +39,7 @@
 			<value>104857600</value>
 		</property>
 		<property name="maxInMemorySize">
-			<value>1024</value>
+			<value>10240</value>
 		</property>
 		<!--指定上传的默认编码-->
 		<property name="defaultEncoding">
