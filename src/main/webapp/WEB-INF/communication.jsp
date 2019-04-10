@@ -58,12 +58,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${sessionScope.pdfs}" var="pdf">
+                <%--<c:forEach items="${sessionScope.pdfs}" var="pdf">--%>
                     <tr align="center">
-                        <th scope="row"><b>${pdf.pdfAuthor}</b></th>
-                        <td>${pdf.pdfName}</td>
-                        <td>${pdf.pdfTime}</td>
-                        <c:choose>
+                        <th scope="row"><b>01</b></th>
+                        <td><a href="answer" style="color: #bee5eb">java怎么学</a></td>
+                        <td>已有 3 人回复</td>
+                        <td>2019 年</td>
+                        <%--<c:choose>
                             <c:when test="${sessionScope.user.uLevel eq 1}">
                                 <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
                                     <c:if test="${sessionScope.user.uId eq pdf.pdfAuthor}">
@@ -74,9 +75,9 @@
                             <c:otherwise>
                                 <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a></td>
                             </c:otherwise>
-                        </c:choose>
+                        </c:choose>--%>
                     </tr>
-                </c:forEach>
+                <%--</c:forEach>--%>
                 </tbody>
             </table>
             </br>
