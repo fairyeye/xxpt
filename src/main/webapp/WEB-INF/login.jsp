@@ -16,9 +16,12 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/templatemo-style.css">
 <script type="text/javascript">
-	var msg="${msg}";
-	if(msg.trim().length != 0) {
+	var msg = "${sessionScope.msg}";
+	sessionStorage.setItem("msg","");
+	sessionStorage.removeItem("msg");
+	if (msg.trim().length != 0) {
 		alert(msg);
+		msg = "";
 	}
 </script>
 </head>
@@ -73,8 +76,9 @@
 										class="btn btn-primary btn-block text-uppercase">
 										登 &nbsp; &nbsp; &nbsp;录</button>
 								</div>
-								<button type="reset" onclick="window.location.href='register'" class="mt-5 btn btn-primary btn-block text-uppercase">
-									没有账号？注册一个</button>
+								<div align="right"><a href="">忘记密码？</a><a href="register" style="color: #bee5eb">没有账号？注册一个&nbsp;&nbsp;&nbsp;</a></div>
+								<%--<button type="reset" onclick="window.location.href='register'" class="mt-5 btn btn-primary btn-block text-uppercase">
+									</button>--%>
 							</form>
 						</div>
 					</div>

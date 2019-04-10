@@ -49,6 +49,10 @@ public class PdfServiceImpl implements IPdfService {
         PdfExample example = new PdfExample();
         example.setOrderByClause("pdf_time");
         List<Pdf> pdfs = pdfMapper.selectByExample(example);
+//        for (Pdf pdf:pdfs){
+//            System.out.println(pdf);
+//            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        }
         return pdfs;
     }
 

@@ -16,17 +16,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
-    <!-- https://fonts.google.com/specimen/Open+Sans -->
     <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="css/templatemo-style.css">
 <script type="text/javascript">
-	var 
-	msg = "${msg}";
+	var msg = "${sessionScope.msg}";
+	sessionStorage.setItem("msg","");
+	sessionStorage.removeItem("msg");
 	if (msg.trim().length != 0) {
 		alert(msg);
+		msg = "";
 	}
 </script>
 </head>
