@@ -51,19 +51,19 @@
             <table class="table">
                 <thead>
                 <tr align="center">
-                    <th scope="col">编号</th>
+                    <th scope="col">提问者</th>
                     <th scope="col">留言问题</th>
                     <th scope="col">留言答复</th>
                     <th scope="col">留言时间</th>
                 </tr>
                 </thead>
                 <tbody>
-                <%--<c:forEach items="${sessionScope.pdfs}" var="pdf">--%>
+                <c:forEach items="${sessionScope.questions}" var="question">
                     <tr align="center">
-                        <th scope="row"><b>01</b></th>
-                        <td><a href="answer" style="color: #bee5eb">java怎么学</a></td>
-                        <td>已有 3 人回复</td>
-                        <td>2019 年</td>
+                        <th scope="row"><b>${question.qAuthor}</b></th>
+                        <td><a href="findanswerbyquestion/${question.qId}" style="color: #bee5eb">${question.qName}</a></td>
+                        <td>已有 ${question.qAnswerNum} 人回复</td>
+                        <td>${question.qTime}</td>
                         <%--<c:choose>
                             <c:when test="${sessionScope.user.uLevel eq 1}">
                                 <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
@@ -77,12 +77,12 @@
                             </c:otherwise>
                         </c:choose>--%>
                     </tr>
-                <%--</c:forEach>--%>
+                </c:forEach>
                 </tbody>
             </table>
             </br>
             <div align="right">
-                <a href="" style="color: #bee5eb">发帖求助</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="addquestion" style="color: #bee5eb">发布问题</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
         </div>
     </div>

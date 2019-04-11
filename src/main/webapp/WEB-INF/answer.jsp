@@ -30,15 +30,15 @@
             <table class="table">
                 <thead>
                 <tr align="center">
-                    <th scope="col" colspan="4">java怎么学</th>
+                    <th scope="col" colspan="4">${sessionScope.question.qName}</th>
                 </tr>
                 </thead>
                 <tbody>
-                <%--<c:forEach items="${sessionScope.pdfs}" var="pdf">--%>
+                <c:forEach items="${sessionScope.answers}" var="answer">
                 <tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
+                    <th scope="row"><b>${answer.aAnuthor}说：</b></th>
+                    <td colspan="2">${answer.aContent}</td>
+                    <td>${answer.aTime}</td>
                     <%--<c:choose>
                         <c:when test="${sessionScope.user.uLevel eq 1}">
                             <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
@@ -52,77 +52,7 @@
                         </c:otherwise>
                     </c:choose>--%>
                 </tr>
-                <tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr>
-                <tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr><tr align="center">
-                    <th scope="row"><b>01</b></th>
-                    <td colspan="2">这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学这样学再这样学</td>
-                    <td>2019 年</td>
-                </tr>
-                <%--</c:forEach>--%>
+                </c:forEach>
                 </tbody>
             </table>
             </br>

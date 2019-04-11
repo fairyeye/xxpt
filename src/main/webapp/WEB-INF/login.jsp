@@ -10,7 +10,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Login Page</title>
+<title>用户登录</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
 <link rel="stylesheet" href="css/fontawesome.min.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -76,23 +76,17 @@
 										class="btn btn-primary btn-block text-uppercase">
 										登 &nbsp; &nbsp; &nbsp;录</button>
 								</div>
-								<div align="right"><a href="">忘记密码？</a><a href="register" style="color: #bee5eb">没有账号？注册一个&nbsp;&nbsp;&nbsp;</a></div>
+								<div align="right"><a href="" style="color: #bee5eb">忘记密码？</a><a href="register" style="color: #bee5eb">没有账号？注册一个&nbsp;&nbsp;&nbsp;</a></div>
 								<%--<button type="reset" onclick="window.location.href='register'" class="mt-5 btn btn-primary btn-block text-uppercase">
 									</button>--%>
 							</form>
+                            <div style="height: 30px;"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer class="tm-footer row tm-mt-small">
-	<div class="col-12 font-weight-light">
-		<p class="text-center text-white mb-0 px-4 small">
-			Copyright &copy; Company name All rights reserved.<a target="_blank"></a>
-		</p>
-	</div>
-	</footer>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>

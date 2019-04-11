@@ -73,13 +73,13 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="communication"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="findallquestion"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <%--图标--%>
                                 <%--<i class="far fa-file-alt"></i>--%>
                                 <span> 学习区 <i class="fas fa-angle-down"></i> </span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="communication">交流答疑</a>
+                                <a class="dropdown-item" href="findallquestion">交流答疑</a>
                                 <a class="dropdown-item" href="">学习视频</a>
                                 <a class="dropdown-item" href="findallpdf">课件管理</a>
                                 <a class="dropdown-item" href="">待办作业</a>
