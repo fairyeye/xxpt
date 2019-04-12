@@ -17,15 +17,31 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css">
     <style type="text/css">
+
+        .bar7 input {
+            width: 250px;
+            border-radius: 42px;
+            border: 2px solid #324B4E;
+            background: #4e555b;
+            transition: .3s linear;
+            float: left;
+        }
+        .bar7 div{
+            float: left;
+        }
+        .bar7 input:focus {
+            width: 300px;
+        }
         .button {
             background-color: #4e555b;
             border: none;
             color: white;
-            padding: 15px 32px;
-            text-align: center;
+            height: 50px;
+            border-radius: 42px;
+            width: 97px;
             text-decoration: none;
             display: inline-block;
-            font-size: 10px;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -36,16 +52,17 @@
 <div class="container" align="center">
     <div style="height: 30px;"></div>
     <div style="width: 30%;">
-        <form action="/">
-            <div style="float: left;">
-                <input name="question" type="text" class="form-control validate" onclick=javascript:this.value='' value="请输入要查询的问题"/>
+        <form action="findquestions" method="post">
+            <div style="height: 80px;width: 400px;">
+            <div class="bar7">
+                <input name="keyword" type="text" class="form-control validate" onclick=javascript:this.value='' value=""/>
             </div>
-            <div style="float: right;"> 
-                <button type="reset" class="button">搜索</button>
+            <div style="float: right;">
+                <button type="submit" class="button">搜索</button>
+            </div>
             </div>
         </form>
     </div>
-    <div style="height: 25px;clear: both;"></div>
     <div class="col-12 tm-block-col">
         <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
             <table class="table">

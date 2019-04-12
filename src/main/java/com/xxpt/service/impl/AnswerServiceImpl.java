@@ -50,4 +50,8 @@ public class AnswerServiceImpl implements IAnswerService {
     public void updateById(Answer entity) throws Exception {
 
     }
+
+    public List<Answer> getListByKeyword(String keywords) throws Exception {
+        return null;
+    }
 }

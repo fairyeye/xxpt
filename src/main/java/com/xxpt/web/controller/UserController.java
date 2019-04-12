@@ -1,6 +1,7 @@
 package com.xxpt.web.controller;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.xxpt.bean.College;
@@ -30,7 +31,7 @@ public class UserController {
 	IStudentService studentService;
 
 	@RequestMapping("/userLogin")
-	public String userLogin(User user, HttpSession session) {
+	public String userLogin(User user, HttpServletRequest request, HttpSession session) {
 		System.out.println("用户" + user + "尝试登录！！");
 		User st_user = new User();
 		try {
@@ -58,7 +59,7 @@ public class UserController {
 			}
 
 		} catch (Exception e) {
-			session.setAttribute("msg", e.getMessage());
+			request.setAttribute("msg", e.getMessage());
 			return "login";
 		}
 	}
@@ -99,9 +100,10 @@ public class UserController {
 				session.setAttribute("userinfo",student);
 				return "info";
 			}
+			return "info";
 			} catch (Exception e) {
 				session.setAttribute("msg", e.getMessage());
+				return "exception";
 			}
-		return "info";
 	}
 }

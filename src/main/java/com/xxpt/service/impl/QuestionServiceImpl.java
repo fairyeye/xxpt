@@ -82,7 +82,13 @@ public class QuestionServiceImpl implements IQuestionService {
     }
 
     public void updateById(Question entity) throws Exception {
-        questionMapper.updateByPrimaryKeySelective(entity);
+            questionMapper.updateByPrimaryKeySelective(entity);
+    }
+
+    public List<Question> getListByKeyword(String keywords) throws Exception {
+        QuestionExample example = new QuestionExample();
+        example.createCriteria().andQNameLike(keywords);
+        return questionMapper.selectByExample(example);
     }
 
 

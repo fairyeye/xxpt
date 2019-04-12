@@ -60,4 +60,6 @@ public interface BaseService<T> {
     Long delete(T entity);
 
     void updateById(T entity) throws Exception;
+
+    List<T> getListByKeyword(String keywords) throws Exception;
 }

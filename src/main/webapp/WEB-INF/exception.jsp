@@ -18,12 +18,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css">
     <script type="text/javascript">
-        var msg = "${sessionScope.msg}";
-        sessionStorage.setItem("msg","");
-        sessionStorage.removeItem("msg");
+        var msg = "${msg}";
         if (msg.trim().length != 0) {
             alert(msg);
-            msg = "";
         }
     </script>
 </head>

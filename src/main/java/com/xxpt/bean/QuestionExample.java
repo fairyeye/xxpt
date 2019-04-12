@@ -296,7 +296,7 @@ public class QuestionExample {
         }
 
         public Criteria andQNameLike(String value) {
-            addCriterion("q_name like", value, "qName");
+            addCriterion("q_name like", "%"+value+"%", "qName");
             return (Criteria) this;
         }
 
@@ -619,5 +619,14 @@ public class QuestionExample {
         protected Criterion(String condition, Object value, Object secondValue) {
             this(condition, value, secondValue, null);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "QuestionExample{" +
+                "orderByClause='" + orderByClause + '\'' +
+                ", distinct=" + distinct +
+                ", oredCriteria=" + oredCriteria +
+                '}';
     }
 }

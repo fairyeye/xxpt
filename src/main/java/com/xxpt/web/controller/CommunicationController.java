@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -40,11 +41,11 @@ public class CommunicationController {
             session.setAttribute("msg",msg);
             return "exception";
         }
-        return "forword:/findallquestion";
+        return "forward:/findallquestion";
     }
 
     @RequestMapping("/findanswerbyquestion/{qId}")
-    public String findAnswerByQuestion(@PathVariable int qId,HttpSession session){
+    public String findAnswerByQuestion(@PathVariable int qId,HttpServletRequest request,HttpSession session){
         try {
             Question question = questionService.getOne(qId);
             session.setAttribute("question",question);
@@ -53,8 +54,22 @@ public class CommunicationController {
             return "redirect:/answer";
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
+    }
+
+    @RequestMapping("/findquestions")
+    public String findQuestions(HttpServletRequest request,HttpSession session){
+        String keyword = request.getParameter("keyword");
+        try {
+            List<Question> listByKeyword = questionService.getListByKeyword(keyword);
+            session.setAttribute("questions",listByKeyword);
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            request.setAttribute("msg",msg);
+            return "exception";
+        }
+        return "communication";
     }
 }
