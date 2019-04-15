@@ -29,7 +29,7 @@ public class CommunicationController {
     }
 
     @RequestMapping("/addonequestion")
-    public String addQuestion(Question question,HttpSession session){
+    public String addQuestion(Question question,HttpSession session, HttpServletRequest request){
         User user = (User)session.getAttribute("user");
         question.setqAuthor(user.getuId());
         try {
@@ -38,7 +38,7 @@ public class CommunicationController {
             session.setAttribute("questions",list);
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
         return "forward:/findallquestion";

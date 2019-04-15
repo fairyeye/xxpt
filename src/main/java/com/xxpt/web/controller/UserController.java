@@ -45,7 +45,7 @@ public class UserController {
 					session.setAttribute("allCollege",allCollege);
 					return "forward:/index";
 				} else {
-					session.setAttribute("msg", "请输入正确的管理员密码");
+                    request.setAttribute("msg", "请输入正确的管理员密码");
 					return "login";
 				}
 			} else {
@@ -64,29 +64,28 @@ public class UserController {
 		}
 	}
 	@RequestMapping("/userRegister")
-	public String userRegister(User user,HttpSession session){
+	public String userRegister(User user , HttpServletRequest request){
 		try {
-			System.out.println("用户" + user + "尝试注册！！");
 			int i = userService.registerValidate(user);
 			if(i==0){
 				userService.register(user);                                                           
 			}else if(i==2){
-				session.setAttribute("msg", "请联系您的教师开通账户，谢谢！");
+                request.setAttribute("msg", "请联系您的教师开通账户，谢谢！");
 				return "register";
 			}else if(i==1){
-				session.setAttribute("msg", "请联系您的领导开通账户，谢谢！");
+                request.setAttribute("msg", "请联系您的领导开通账户，谢谢！");
 				return "register";
 			}
-			session.setAttribute("msg", "注册成功！");
+            request.setAttribute("msg", "注册成功！");
 			return "login";
 		} catch (Exception e) {
-			session.setAttribute("msg", "注册失败！");
+            request.setAttribute("msg", "注册失败！");
 			return "register";
 		}
 	}
 
 	@RequestMapping("/userinfo")
-	public String userInfo(HttpSession session){
+	public String userInfo(HttpSession session, HttpServletRequest request){
 		User user = (User)session.getAttribute("user");
 		try {
 			if ("0".equals(user.getuLevel())){
@@ -102,7 +101,7 @@ public class UserController {
 			}
 			return "info";
 			} catch (Exception e) {
-				session.setAttribute("msg", e.getMessage());
+            request.setAttribute("msg", e.getMessage());
 				return "exception";
 			}
 	}

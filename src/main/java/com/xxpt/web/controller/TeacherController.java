@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class TeacherController {
     private ITeacherService teacherService;
 
     @RequestMapping("/addoneteacher")
-    public String addOneTeacher(Teacher teacher, HttpSession session){
+    public String addOneTeacher(Teacher teacher, HttpSession session, HttpServletRequest request){
         try {
             teacherService.save(teacher);
             List<Teacher> allTeacher = teacherService.findAllTeacher();
@@ -24,26 +25,26 @@ public class TeacherController {
             return "addsuccess";
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
     }
 
     @RequestMapping("/findallteacher")
-    public String findAllTeacher(HttpSession session){
+    public String findAllTeacher(HttpSession session, HttpServletRequest request){
         try {
             List<Teacher> allTeacher = teacherService.findAllTeacher();
             session.setAttribute("allTeacher",allTeacher);
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
         return "teacher";
     }
 
     @RequestMapping("/deleteoneteacher/{tId}")
-    public String deleteOneTeacher(@PathVariable String tId, HttpSession session){
+    public String deleteOneTeacher(@PathVariable String tId, HttpSession session, HttpServletRequest request){
         try {
             teacherService.deleteTeacher(tId);
             List<Teacher> allTeacher = teacherService.findAllTeacher();
@@ -51,7 +52,7 @@ public class TeacherController {
             return "redirect:/deletesuccess";
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
     }

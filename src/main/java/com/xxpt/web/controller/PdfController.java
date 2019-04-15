@@ -12,6 +12,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.*;
@@ -23,12 +24,12 @@ public class PdfController {
     private IPdfService pdfService;
 
     @PostMapping("/pdfupload")
-    public String pdfUpload(@RequestParam("file") CommonsMultipartFile file, HttpSession session){
+    public String pdfUpload(@RequestParam("file") CommonsMultipartFile file, HttpSession session, HttpServletRequest request){
         String originalFilename = file.getOriginalFilename();
         //避免用户不选择文件直接上传的问题
         if ("".equals(originalFilename.trim())){
             String msg = "请选择要上传的文件!";
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "courseware";
         }
         ServletContext sc = session.getServletContext();
@@ -65,26 +66,27 @@ public class PdfController {
         try {
             pdfService.save(pdf);
         } catch (Exception e) {
-            e.printStackTrace();
+            request.setAttribute("msg",e.getMessage());
+            return "exception";
         }
         return "addsuccess";
     }
 
     @RequestMapping("/findallpdf")
-    public String findAllPdf(HttpSession session){
+    public String findAllPdf(HttpSession session, HttpServletRequest request){
         try {
             List<Pdf> allPdf = pdfService.findAllPdf();
             session.setAttribute("pdfs",allPdf);
             return "courseware";
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
     }
 
     @RequestMapping("/pdfdownload/{pdfId}")
-    public String downLoad(@PathVariable int pdfId, HttpServletResponse response,HttpSession session){
+    public String downLoad(@PathVariable int pdfId, HttpServletResponse response,HttpSession session, HttpServletRequest request){
         FileInputStream is = null;
         OutputStream os = null;
         System.out.println(pdfId);
@@ -108,18 +110,18 @@ public class PdfController {
             return "courseware";
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
     }
 
     @RequestMapping("/pdfdelete/{pdfId}")
-    public String pdfDelete(@PathVariable int pdfId,HttpSession session){
+    public String pdfDelete(@PathVariable int pdfId , HttpServletRequest request){
         try {
             pdfService.delete(pdfId);
         } catch (Exception e) {
             String msg = e.getMessage();
-            session.setAttribute("msg",msg);
+            request.setAttribute("msg",msg);
             return "exception";
         }
         return "redirect:/deletesuccess";
