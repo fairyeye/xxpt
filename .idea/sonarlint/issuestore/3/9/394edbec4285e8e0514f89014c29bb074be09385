@@ -1,5 +1,6 @@
 
-asquid:S1192"JDefine a constant instead of duplicating this literal "exception" 3 times.(›äæ
+isquid:S2441"MMake "List" and its parameters serializable or don't store it in the session.(Ğ…ÇŒúÿÿÿÿ
+asquid:S1192"JDefine a constant instead of duplicating this literal "exception" 4 times.(›äæ
 O
 squid:S106""9Replace this use of System.out or System.err by a logger.(åÅÁ™
-isquid:S2441"MMake "List" and its parameters serializable or don't store it in the session.(Ğ…ÇŒúÿÿÿÿ
+psquid:S2441A"MMake "List" and its parameters serializable or don't store it in the session.(Ğ…ÇŒúÿÿÿÿ8§úÈü -
