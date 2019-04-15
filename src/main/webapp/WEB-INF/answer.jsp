@@ -17,6 +17,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css">
 
+    <style type="text/css">
+        .button {
+            background-color: #4e657a;
+            border: none;
+            color: white;
+            height: 48px;
+            border-radius: 12px;
+            width: 97px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +43,9 @@
             <table class="table">
                 <thead>
                 <tr align="center">
-                    <th scope="col" colspan="4">${sessionScope.question.qName}</th>
+                    <th scope="col">回答者</th>
+                    <th scope="col" colspan="2">问题：${sessionScope.question.qName}</th>
+                    <th scope="col">操作</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -38,30 +53,29 @@
                 <tr align="center">
                     <th scope="row"><b>${answer.aAnuthor}说：</b></th>
                     <td colspan="2">${answer.aContent}</td>
-                    <td>${answer.aTime}</td>
-                    <%--<c:choose>
-                        <c:when test="${sessionScope.user.uLevel eq 1}">
-                            <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
-                                <c:if test="${sessionScope.user.uId eq pdf.pdfAuthor}">
-                                    <a href="pdfdelete/${pdf.pdfId}" style="color: #bee5eb">删除</a>
-                                </c:if>
-                            </td>
-                        </c:when>
-                        <c:otherwise>
-                            <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a></td>
-                        </c:otherwise>
-                    </c:choose>--%>
+                    <%--<td>${answer.aTime}</td>--%>
+                    <td>
+                        <c:if test="${sessionScope.user.uId eq sessionScope.question.qAuthor}">
+                            <a href="deleteanswer/${answer.aId}" class="tm-product-delete-link" onclick="return delete_sure()">
+                                <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                            </a>
+                        </c:if>
+                    </td>
                 </tr>
                 </c:forEach>
                 </tbody>
             </table>
             </br>
 
-            <div align="center" style="position:absolute; bottom:0;">
-                &nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="3" cols="90" onclick=javascript:this.value='' style="color: #ffffff;background: #4e657a;">
-                    我要回答...
-                </textarea>
-                <a href="" style="color: #bee5eb;">提交</a>
+            <div align="center" style="position:absolute; bottom:6px;">
+                <form action="addanswerquestion/${sessionScope.user.uId}/${sessionScope.question.qId}" method="post">
+                    <div style="height: 50px;width: 700px; color: #bee5eb;" >
+                        我要回答：<input type="text" name="aContent" style="height: 50px;width: 70%;background: #4e657a; border: 0; border-radius: 12px;" value=""/>
+                        <button type="submit" class="button">提交</button><br>
+                        <div style="height: 10%;"> </div>
+                    </div>
+                <%--<a href="answerquestion/${sessionScope.question.qId}" style="color: #bee5eb;">提交</a>--%>
+            </form>
             </div>
         </div>
     </div>
@@ -69,5 +83,15 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script language="JavaScript">
+    function delete_sure() {
+        var sure = confirm("确定删除？");
+        if (sure == true){
+            return true;
+        } else{
+            return false;
+        }
+    }
+</script>
 </body>
 </html>

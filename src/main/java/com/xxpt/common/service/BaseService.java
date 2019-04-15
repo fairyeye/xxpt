@@ -49,7 +49,7 @@ public interface BaseService<T> {
      * @param id 对象ID
      * @return 被删除的记录数
      */
-    void delete(Long id);
+    void delete(Integer id) throws Exception;
 
     /**
      * 根据对象属性值删除对象

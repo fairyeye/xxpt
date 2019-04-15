@@ -73,8 +73,15 @@ public class QuestionServiceImpl implements IQuestionService {
         }
     }
 
-    public void delete(Long id) {
-
+    public void delete(Integer id) throws Exception{
+        Question question = questionMapper.selectByPrimaryKey(id);
+        if (question == null){
+            throw new Exception("删除失败！没有找到该问题！");
+        }
+        int i = questionMapper.deleteByPrimaryKey(id);
+        if (i != 1){
+            throw new Exception("删除失败！");
+        }
     }
 
     public Long delete(Question entity) {

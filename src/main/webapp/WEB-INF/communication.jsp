@@ -20,7 +20,7 @@
 
         .bar7 input {
             width: 250px;
-            border-radius: 42px;
+            border-radius: 12px;
             border: 2px solid #324B4E;
             background: #4e555b;
             transition: .3s linear;
@@ -29,15 +29,15 @@
         .bar7 div{
             float: left;
         }
-        .bar7 input:focus {
+        /*.bar7 input:focus {
             width: 300px;
-        }
+        }*/
         .button {
             background-color: #4e555b;
             border: none;
             color: white;
             height: 50px;
-            border-radius: 42px;
+            border-radius: 12px;
             width: 97px;
             text-decoration: none;
             display: inline-block;
@@ -72,6 +72,7 @@
                     <th scope="col">留言问题</th>
                     <th scope="col">留言答复</th>
                     <th scope="col">留言时间</th>
+                    <th scope="col">操作</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -81,18 +82,13 @@
                         <td><a href="findanswerbyquestion/${question.qId}" style="color: #bee5eb">${question.qName}</a></td>
                         <td>已有 ${question.qAnswerNum} 人回复</td>
                         <td>${question.qTime}</td>
-                        <%--<c:choose>
-                            <c:when test="${sessionScope.user.uLevel eq 1}">
-                                <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a>&nbsp;&nbsp;&nbsp;
-                                    <c:if test="${sessionScope.user.uId eq pdf.pdfAuthor}">
-                                        <a href="pdfdelete/${pdf.pdfId}" style="color: #bee5eb">删除</a>
-                                    </c:if>
-                                </td>
-                            </c:when>
-                            <c:otherwise>
-                                <td><a href="pdfdownload/${pdf.pdfId}" style="color: #bee5eb">下载</a></td>
-                            </c:otherwise>
-                        </c:choose>--%>
+                        <td>
+                            <c:if test="${sessionScope.user.uId eq question.qAuthor}">
+                            <a href="deletequestion/${question.qId}" class="tm-product-delete-link" onclick="return delete_sure()">
+                                <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                            </a>
+                            </c:if>
+                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -107,5 +103,15 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script language="JavaScript">
+    function delete_sure() {
+        var sure = confirm("确定删除？");
+        if (sure == true){
+            return true;
+        } else{
+            return false;
+        }
+    }
+</script>
 </body>
 </html>

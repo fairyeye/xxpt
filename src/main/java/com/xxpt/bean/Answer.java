@@ -167,4 +167,15 @@ public class Answer {
     public void setaTime(Date aTime) {
         this.aTime = aTime;
     }
+
+    @Override
+    public String toString() {
+        return "Answer{" +
+                "aId=" + aId +
+                ", aContent='" + aContent + '\'' +
+                ", aAnuthor='" + aAnuthor + '\'' +
+                ", aQid=" + aQid +
+                ", aTime=" + aTime +
+                '}';
+    }
 }

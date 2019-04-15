@@ -7,15 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfa06496-6705-4c77-9f58-4bbf0c8b19eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CollegeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CollegeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/bean/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/bean/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/common/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/common/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/AnswerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/QuestionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/NoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/NoticeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/PdfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/PdfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/answer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/answer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/communication.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/communication.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,52 +47,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/StudentController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/communication.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="319">
+              <caret line="86" column="82" selection-start-line="86" selection-start-column="82" selection-end-line="86" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/ShowPageController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/student.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="403">
+              <caret line="139" column="11" selection-start-line="130" selection-start-column="2" selection-end-line="139" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/answer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+            <state relative-caret-position="307">
+              <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CollegeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/PdfController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+            <state relative-caret-position="508">
+              <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,10 +92,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/NoticeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/bean/Answer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+            <state relative-caret-position="294">
+              <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/AnswerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/common/service/BaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/PdfServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="61" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/QuestionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,6 +182,7 @@
       <find>session.setAttribute(&quot;msg&quot;,msg);</find>
       <find>like</find>
       <find>sele</find>
+      <find>validate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/teacher.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/info.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/student.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/StudentServiceImpl.java" />
@@ -211,25 +243,26 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/service/IAnswerService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/answer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/dao/AnswerMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/common/service/BaseService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/exception.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/updatePassword.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/AnswerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/QuestionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/bean/QuestionExample.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/communication.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/PdfController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/NoticeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CollegeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxpt/bean/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/answer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/AnswerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/communication.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/QuestionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java" />
       </list>
     </option>
   </component>
@@ -489,7 +522,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555297811888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555317919064" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../poll3-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -717,7 +750,7 @@
       <workItem from="1554864025476" duration="15736000" />
       <workItem from="1554953153745" duration="9713000" />
       <workItem from="1555039387734" duration="7390000" />
-      <workItem from="1555297117223" duration="685000" />
+      <workItem from="1555297117223" duration="7957000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA 成功版本。">
       <created>1553218235131</created>
@@ -936,7 +969,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555297270539</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="异常信息存放到request里。">
+      <created>1555297849854</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1555297849854</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -951,7 +991,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161143000" />
+    <option name="totallyTimeSpent" value="168415000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -966,7 +1006,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.20042644" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.23347548" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -976,7 +1016,7 @@
       <window_info id="Web" order="7" side_tool="true" weight="0.32942432" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1094,7 +1134,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.某些页面的登录判断。&#10;2.新建添加教师页面&#10;3.新建添加学院页面&#10;4.新建添加学生页面&#10;5.引入top实现导航栏" />
     <MESSAGE value="修改学生管理图标。" />
     <MESSAGE value="完善addteacher.jsp&#10;完善top.jsp&#10;添加deletesuccess.jsp" />
     <MESSAGE value="完善index.jsp。&#10;完成addnotice.jsp。" />
@@ -1119,42 +1158,10 @@
     <MESSAGE value="BaseService接口。&#10;问题和答案相关类。&#10;交流答疑页面添加查看。" />
     <MESSAGE value="关键字查询。&#10;将异常信息存入request。&#10;findquestions页面。" />
     <MESSAGE value="Upgrade commons-fileupload:commons-fileupload to version 1.3.3 or later. For example:" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade commons-fileupload:commons-fileupload to version 1.3.3 or later. For example:" />
+    <MESSAGE value="异常信息存放到request里。" />
+    <option name="LAST_COMMIT_MESSAGE" value="异常信息存放到request里。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/XXPT3.0/pdf/3" />
-    <entry file="file://$PROJECT_DIR$/target/XXPT3.0/pdf/2" />
-    <entry file="file://$PROJECT_DIR$/target/XXPT3.0/pdf/1" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/NoticeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/listener/ApplicationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="76" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/IPdfService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/study.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1276,16 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/PdfServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1307,27 +1304,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/IAnswerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/dao/AnswerMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="202" column="42" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/answer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1366,16 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/AnswerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/dao/QuestionMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1390,23 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/communication.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/QuestionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/IQuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1414,13 +1367,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/common/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1499,20 +1445,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CollegeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/templatemo-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="283" column="19" lean-forward="true" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="1985" column="62" selection-start-line="1985" selection-start-column="54" selection-end-line="1985" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addstudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="38" column="102" lean-forward="true" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/IAnswerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CollegeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/PdfServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="20" column="61" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/bean/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/answer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/deletesuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/student.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="139" column="11" selection-start-line="130" selection-start-column="2" selection-end-line="139" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/common/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/communication.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="86" column="82" selection-start-line="86" selection-start-column="82" selection-end-line="86" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/AnswerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/service/impl/QuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxpt/web/controller/CommunicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

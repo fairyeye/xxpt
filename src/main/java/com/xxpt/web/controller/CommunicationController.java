@@ -72,4 +72,49 @@ public class CommunicationController {
         }
         return "communication";
     }
+
+    /**
+     * 在添加回复之后跳转到查询回复的列表
+     * @param aQid
+     * @param aAnuthor
+     * @param answer
+     * @param request
+     * @return
+     */
+    @RequestMapping("/addanswerquestion/{aAnuthor}/{aQid}")
+    public String addAnswerQuestion(@PathVariable Integer aQid,@PathVariable String aAnuthor,Answer answer,HttpServletRequest request){
+        // {aQid}这样传值同样可以封装到answer对象中。
+        System.out.println(answer);
+        try {
+            answerService.save(answer);
+            return "forward:../../findanswerbyquestion/"+aQid;
+//            return "";
+        } catch (Exception e) {
+            request.setAttribute("msg",e.getMessage());
+            return "exception";
+        }
+    }
+
+    @RequestMapping("/deleteanswer/{aId}")
+    public String deleteAnswerById(@PathVariable Integer aId,HttpServletRequest request){
+        try {
+            answerService.delete(aId);
+            return "redirect:../deletesuccess";
+        } catch (Exception e) {
+            request.setAttribute("msg",e.getMessage());
+            return "exception";
+        }
+    }
+
+    @RequestMapping("/deletequestion/{qId}")
+    public String deleteQuestionById(@PathVariable Integer qId,HttpServletRequest request){
+        try {
+            questionService.delete(qId);
+            return "redirect:../deletesuccess";
+        } catch (Exception e) {
+            // TODO: 2019/4/15 如果删除失败的话，从异常页面无法点击顶栏。
+            request.setAttribute("msg",e.getMessage());
+            return "exception";
+        }
+    }
 }
