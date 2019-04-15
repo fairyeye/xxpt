@@ -32,7 +32,7 @@
 			<div class="tm-bg-primary-dark tm-block tm-block-avatar">
 				<h2 class="tm-block-title"> </h2>
 				<div class="tm-avatar-container">
-					<img src="img/admin.jpg" alt="Avatar" class="tm-avatar img-fluid mb-4" />
+					<img src="img|admin.jpg" alt="Avatar" class="tm-avatar img-fluid mb-4" />
 				</div>
 			</div>
 		</div>

@@ -14,11 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>管理员</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-    <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/fontawesome.min.css">
-    <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
-    <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/templatemo-style.css">
     <title>Insert title here</title>
 </head>
@@ -32,7 +29,7 @@
             <div class="tm-bg-primary-dark tm-block tm-block-avatar">
                 <h2 class="tm-block-title"> </h2>
                 <div class="tm-avatar-container">
-                    <img src="img/admin.jpg" alt="Avatar" class="tm-avatar img-fluid mb-4" />
+                    <img src="img|admin.jpg" alt="Avatar" class="tm-avatar img-fluid mb-4" />
                 </div>
             </div>
         </div>

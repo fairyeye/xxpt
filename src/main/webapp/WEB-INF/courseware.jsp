@@ -17,6 +17,19 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <style type="text/css">
+        .button {
+            background-color: #455c71;
+            border: none;
+            color: white;
+            height: 48px;
+            border-radius: 12px;
+            width: 97px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
 <jsp:include page="top.jsp"></jsp:include>
@@ -27,7 +40,7 @@
         <c:if test="${sessionScope.user.uLevel eq 1}">
     <form action="pdfupload" method="post" enctype="multipart/form-data">
         <input type="file" name="file" >
-        <input type="submit" id="i-check" value="上传">
+        <button type="submit" class="button">上传</button>
     </form>
         </c:if>
     </div>
